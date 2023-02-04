@@ -5,7 +5,7 @@
 
    - It is develop by FB/Meta. 
 
-### why React ?
+## why React ?
 
   - very Fast.
 
@@ -14,7 +14,7 @@
            
    ![CHEESE!](img/bb.png)
 
-   ![CHEESE!](img/aa.png)
+![CHEESE!](img/aa.png)
 
   - easy event handling
         
@@ -30,8 +30,9 @@
 
    - react uses something called as Virtual Dom.    
 
-   -------------------------------------     
-
+   ----------------------     
+-----------------------
+-------------------------
 #### Framework:
      
        ek particular tools jisme sari chije mil jati h. 
