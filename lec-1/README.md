@@ -294,3 +294,20 @@
                         }
 
                         ReactDOM.render(<Element/>,document.getElementById('root'))
+  ```
+
+#### Note :
+
+       React k ander ek se jada element/obj k liye 
+           
+             1-    <div>
+             
+                   </div>
+
+            2-    <React.Fragment>                        <>
+                                            or      
+                  </React.Fragment>                       </>
+
+
+       
+       use karte h.           
