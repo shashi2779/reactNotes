@@ -7,7 +7,8 @@
     
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
     <title>Document</title>
 </head>
 <body>
@@ -18,7 +19,7 @@
     
 </body>
 
-<script>
+<script type="text/babel">
         //DOM me
 
         // let ele = document.createElement("h1")
@@ -34,13 +35,30 @@
         // React me
 
          
-         let ele = React.createElement('h1',{
-            children:['hello']
-         })
+    //      let ele = React.createElement('h1',{
+    //         children:['hello']
+    //      })
 
-       //  console.log(ele)
+    //    //  console.log(ele)
 
-        ReactDOM.render(ele,root)
+    //     ReactDOM.render(ele,root)
+
+
+    
+
+    // JSX
+
+    function Element(){
+       return(
+          <h1>Hello</h1>
+       )
+    }
+
+
+    ReactDOM.render(<Element/>,document.getElementById('root'))
+
+
+
 
 
 </script>
