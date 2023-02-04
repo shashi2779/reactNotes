@@ -304,6 +304,9 @@
              
                    </div>
 
+
+                   or
+
             2-    <React.Fragment>                        <>
                                             or      
                   </React.Fragment>                       </>
