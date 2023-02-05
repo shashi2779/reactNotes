@@ -304,6 +304,8 @@
     - if-else not allowed ----------> Ternary operator
     - Object ko render nhi kra sakte ---------> Array render kar sakte h.
 
+
+
 #### Note :
 
        React k ander ek se jada element/obj k liye 
