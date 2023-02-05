@@ -296,6 +296,14 @@
                         ReactDOM.render(<Element/>,document.getElementById('root'))
   ```
 
+  ### Rules of JSX:
+   
+    - No Variable declaration.
+    - No function declaration.
+    - No loop (for,while,...)    --------> Map/Filter
+    - if-else not allowed ----------> Ternary operator
+    - Object ko render nhi kra sakte ---------> Array render kar sakte h.
+
 #### Note :
 
        React k ander ek se jada element/obj k liye 
@@ -313,4 +321,7 @@
 
 
        
-       use karte h.           
+       use karte h.        
+
+
+         
