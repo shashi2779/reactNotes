@@ -356,7 +356,7 @@
 
             - static UI pahle, after Hooks it is also Dynamic UI
 
--  class component vs functional component
+-  class component vs functional :component
 
    - class component :
        ```js
