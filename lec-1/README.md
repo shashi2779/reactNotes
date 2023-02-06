@@ -439,7 +439,7 @@
 ### state :
 
    - It is nothing but an "object".  esme data aate h
-   - "state" k ander aap properties ko " key:value " m pass krr sakte h.
+   - "state" k ander aap properties ko " key:value " pair m pass krr sakte h.
    - jo bhi tumhe "UI m changes" karne hai, usko state m put karegen.
 
 ### render :
