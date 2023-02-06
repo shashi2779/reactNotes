@@ -326,7 +326,7 @@
        use karte h.        
 
 
-### Components :
+## Components :
 
 -       It is basically isolated, reuseable, independent pieces of code.
 
