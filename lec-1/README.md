@@ -326,4 +326,32 @@
        use karte h.        
 
 
-         
+### Components :
+
+-       It is basically isolated, reuseable, independent pieces of code.
+
+
+      ye pieces of code hme return karta h - JSX
+      aur ye JSX ham apne UI par render kra dete hai.   
+            
+ 
+ -   kisi particular website ko parts m divide karna ,, website k jitne parts hai,
+     unko aap ek ek Component ki tarah treat kare.
+     [parts m break karna i.e Component h]
+ ![CHEESE!](img/cc.jpg)
+
+ 
+ - Two types of Component :
+        
+      - class Component
+           
+            - stateFull : mtlb esme state define kar sakte h.
+
+            - Dynamic UI
+            
+      - functional component
+      
+            - StateLess - pahle , 
+              but after Hooks in functional component hmm apne state ko define kar sakte h.
+
+            - static UI pahle, after Hooks it is also Dynamic UI
