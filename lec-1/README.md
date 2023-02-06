@@ -430,3 +430,54 @@
        - props access :
 
                props.name
+
+
+### state :
+
+   - It is nothing but an "object".  esme data aate h
+   - "state" k ander aap properties ko " key:value " m pass krr sakte h.
+   - jo bhi tumhe "UI m changes" karne hai, usko state m put karegen.
+
+### render :
+    
+  -  "displayed of UI". ✨
+  -  whenever state is changed , re-render is called.
+  -  render method describe what should be displayed & how should the UI look like.
+
+### super :
+   
+   - "super" se hmm "Parent class ki properties" ko access krr pate h.
+    
+    - access the property from parents.
+
+    - parent ki "properties" access krr k deta h "value" nhi.
+   - "React.Component" mera Parent class h. Component mera child class.
+   - super se hme class ka "this" milta h.
+
+   
+     
+```js
+       
+       class Component extends React.Components{
+           
+            constructor(){
+                  
+                  super()
+                  
+                  this.state = {
+                        ..............
+                  }
+            }
+
+            //yha function def krr sakte h
+
+            render(){
+                  
+                  // yha koi bhi logic likh sakte h
+                  
+                  return(
+                        //JSX
+                  )
+            }
+         }
+         ```
