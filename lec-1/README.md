@@ -374,8 +374,8 @@
 
             //yha function def krr sakte h
             ----------------------------------
-            // yha [class component m] fun define karte samay hme "function" keyword 
-            // nhi lena hota h. i.e function increment(){} => var increment = ()=>{} .
+            // yha [class component m] fun define karte samay hme "function" keyword nhi lena hota h.
+            //  i.e function increment(){} => var increment = ()=>{} .
             
 
             render(){
@@ -475,8 +475,8 @@
 
             //yha function def krr sakte h 
             --------------------------------
-            // yha [class component m] fun define karte samay hme "function" keyword 
-            // nhi lena hota h. i.e function increment(){} => var increment = ()=>{} .
+            // yha [class component m] fun define karte samay hme "function" keyword nhi lena hota h.
+            //  i.e function increment(){} => var increment = ()=>{} .
             
 
             render(){
