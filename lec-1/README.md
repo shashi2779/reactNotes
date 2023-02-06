@@ -373,6 +373,10 @@
             }
 
             //yha function def krr sakte h
+            ----------------------------------
+            // yha [class component m] fun define karte samay hme "function" keyword 
+            // nhi lena hota h. i.e function increment(){} => var increment = ()=>{} .
+            
 
             render(){
                   
@@ -469,7 +473,11 @@
                   }
             }
 
-            //yha function def krr sakte h
+            //yha function def krr sakte h 
+            --------------------------------
+            // yha [class component m] fun define karte samay hme "function" keyword 
+            // nhi lena hota h. i.e function increment(){} => var increment = ()=>{} .
+            
 
             render(){
                   
@@ -480,4 +488,10 @@
                   )
             }
          }
-         ```
+```
+### props :  
+
+ - jab hmm Component m argument bhejne ki bat karte h, toh usse props kahte h.
+ - props means i.e properties.
+ - pass data from one component to an other component [parent comp to child comp].
+ - props ko {} 💨 esme pass karte h.
