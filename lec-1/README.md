@@ -359,6 +359,7 @@
 -  class component vs functional component :
 
    - class component :
+     ------------------
        ```js
          class Component extends React.Components{
            
@@ -403,6 +404,7 @@
 
    
    - functional component :
+     ---------------------------
         
         ```js
 
