@@ -338,7 +338,7 @@
  -   kisi particular website ko parts m divide karna ,, website k jitne parts hai,
      unko aap ek ek Component ki tarah treat kare.
      [parts m break karna i.e Component h]
- ![CHEESE!](img/cc.jpg)
+  ![CHEESE!](img/cc.jpg)
 
  
  - Two types of Component :
@@ -355,3 +355,76 @@
               but after Hooks in functional component hmm apne state ko define kar sakte h.
 
             - static UI pahle, after Hooks it is also Dynamic UI
+
+-  class component vs functional component
+
+   - class component :
+       ```js
+         class Component extends React.Components{
+           
+            constructor(){
+                  
+                  super()
+                  
+                  this.state = {
+                        ..............
+                  }
+            }
+
+            //yha function def krr sakte h
+
+            render(){
+                  
+                  // yha koi bhi logic likh sakte h
+                  
+                  return(
+                        //JSX
+                  )
+            }
+         }
+
+       ```
+       - state define :
+             
+             this.state={
+                  ..............
+             }
+
+        - state set [value set karana ho toh] :
+
+                     this.setState({
+                        .................
+                     })
+      - props access in class component :
+
+
+             this.props.name
+
+
+   
+   - functional component :
+        
+        ```js
+
+         function Component(){
+
+             return(
+                   //JSX
+             )
+         }
+        ```
+        - state define :
+
+                 const[state,setState] = useState(0)
+
+       -   set state :  
+           
+               setState(....)
+                         🔺
+                         🟫updated value dal degen
+                       
+                  
+                       
+       - props access :
+
+               props.name
