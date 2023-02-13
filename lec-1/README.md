@@ -495,3 +495,6 @@
  - props means i.e properties.
  - pass data from one component to an other component [parent comp to child comp].
  - props ko {} 💨 esme pass karte h.
+
+
+![CHEESE!](img/React_Revision.jpg)
