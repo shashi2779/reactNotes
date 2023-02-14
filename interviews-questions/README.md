@@ -6,8 +6,9 @@
 
 # react-interviews-question :
 
-### Lifecycle method in react :
+### Lifecycle method in react : 
 ------------------------------------
+- sideEffect wale kam kar k deta hai class component me.  i.e API call
 - Three phases : (In class)
 
      - mounting(creation)   : 
@@ -54,7 +55,8 @@
 
     2- useEffect(fun) => eska alternate class component m nhi hota.
     
------*********** -----***********---------   
+######
+-----------------  
 
 ![CHEESE!](imgg/life-3.jpg)
 
