@@ -206,3 +206,183 @@
 
           ```      
  
+
+
+### Memoization :
+-------------------
+-------------------
+
+```js
+
+  # App.js File Component
+
+  import Parent from './Parent';
+
+  
+  function App(){
+    return(
+        <Parent/>
+    )
+  }
+
+
+
+ 
+ # Parent.js Component
+    
+  import React,{useState} from 'react'
+  import Child from './Child';
+
+
+
+  function Parent(){
+
+    const [count,setCount] = useState(0);
+    const [text,setText] = useState('Hello');
+
+    console.log("Parent render")
+
+    return(
+        <>
+          <button onClick={()=>setCount(count+1)}>change count</button>
+          <button onClick={()=>setText(text+'...')}>change Text</button>
+          <Child count={count} />
+        </>
+    )
+
+  }
+
+  export default Parent;
+
+
+
+
+
+ # Child.js component
+
+     import React from 'react'
+     
+     function Child(props){
+
+        console.log("Child render")
+
+        return(
+            <>
+              { props.count}
+            </>
+        )
+
+     }
+
+     export default Child;
+
+
+
+```
+
+#### output :
+- maine change count ko click/update kiya toh Parent , Child update hoga bcz Child jo hai count ki
+  value ko consume kiya hai.
+  props change huaa toh component render hoga samajh aata hai.
+
+- maine change text ko click kiya toh Child Component kyun render hua  
+  bcz react me - Parent ki state change huyi toh Parent re-render hoga.
+  abb Parent re-render hua toh eska pura jo tree hai usko re-render kar
+  dega. React ka "default" behaviour hai. 
+
+- ham chahte hai React ka ye behaviour change karna,
+  hmm chahte hai Parent re-render ho toh Child na ho.
+
+  toh Child ko memoize kar degen
+  React.memo(child)
+
+   
+  ![CHEESE!](imgg/memo3.jpeg)
+
+      
+          
+  ![CHEESE!](imgg/memo1.png)   
+
+- ham chahte hai React ka ye behaviour change karna,
+  hmm chahte hai Parent re-render ho toh Child na ho.
+
+  toh Child ko memoize kar degen
+  React.memo(child)
+
+
+
+```js
+
+  # App.js File Component
+
+  import Parent from './Parent';
+
+  
+  function App(){
+    return(
+        <Parent/>
+    )
+  }
+
+
+
+ 
+ # Parent.js Component
+    
+  import React,{useState} from 'react'
+  import Child from './Child';
+
+
+
+  function Parent(){
+
+    const [count,setCount] = useState(0);
+    const [text,setText] = useState('Hello');
+
+    console.log("Parent render")
+
+    return(
+        <>
+          <button onClick={()=>setCount(count+1)}>change count</button>
+          <button onClick={()=>setText(text+'...')}>change Text</button>
+          <Child count={count} />
+        </>
+    )
+
+  }
+
+  export default Parent;
+
+
+
+
+
+ # Child.js component
+
+     import React from 'react'
+     
+     function Child(props){
+
+        console.log("Child render")
+
+        return(
+            <>
+              { props.count}
+            </>
+        )
+
+     }
+
+    
+    // esse child re-render nhi hoga
+     export default React.memo(Child);
+
+
+```
+
+#### output :
+
+- maine change text ko click kiya toh Child Component render nhi hua only Parent hua 
+  bcz change text wala child me access nhi kar rha props k through.
+  
+  ![CHEESE!](imgg/memo2.png)   
