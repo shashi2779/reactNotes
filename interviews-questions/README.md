@@ -388,3 +388,367 @@
   bcz change text wala child me access nhi kar rha props k through.
   
   ![CHEESE!](imgg/memo2.png)   
+
+
+
+##### useMemo()
+
+
+```js
+
+  # App.js File Component
+
+  import Parent from './Parent';
+
+  
+  function App(){
+    return(
+        <Parent/>
+    )
+  }
+
+
+
+ 
+ # Parent.js Component
+    
+  import React,{useState} from 'react'
+  import Child from './Child';
+
+
+
+  function Parent(){
+
+    const [count,setCount] = useState(0);
+    const [text,setText] = useState('Hello');
+    
+    // object - new refrence bna deta hai 
+    const person = {
+        name :"shashi",
+        city :"bangalore"
+    }
+
+    console.log("Parent render")
+
+    return(
+        <>
+          <button onClick={()=>setCount(count+1)}>change count</button>
+          <button onClick={()=>setText(text+'...')}>change Text</button>
+
+          // Component me obj pass kiya
+          <Child count={count} person={person}/> 
+        </>
+    )
+
+  }
+
+  export default Parent;
+
+
+
+
+
+ # Child.js component
+
+     import React from 'react'
+     
+     function Child(props){
+
+        console.log("Child render")
+
+        return(
+            <>
+              { props.count}
+            </>
+        )
+
+     }
+
+    
+    // esse child re-render nhi hoga
+     export default React.memo(Child);
+
+
+```
+
+#### note :
+
+- jab mai text change ko click kar rha toh mera memoized Fail ho gya 
+  Child component bhi mera re-render ho gya.
+ 
+  aisa kyu hua - 
+
+  bcz jab bhi aapka component re-render hoga na pura toh "object" and "function"
+  ko new "refrance" milta hai.
+  toh jab aapka Component re-render hua toh usko "new address" mil gya.
+
+- React shallow copy check karta hai , usne dekha props hamara same tha,
+  but uska refrence change hua toh re-render kar diya 
+  
+    
+![CHEESE!](imgg/memo1.png)   
+
+
+
+
+
+```js
+
+  # App.js File Component
+
+  import Parent from './Parent';
+
+  
+  function App(){
+    return(
+        <Parent/>
+    )
+  }
+
+
+
+ 
+ # Parent.js Component
+  
+  // import kiya useMemo ko
+  import React,{useState,useMemo} from 'react'
+  import Child from './Child';
+
+
+
+  function Parent(){
+
+    const [count,setCount] = useState(0);
+    const [text,setText] = useState('Hello');
+    
+
+    // obj - ref change karr deta hai
+    const person = {
+        name :"shashi",
+        city :"bangalore"
+    }
+
+    // person as a state use hua hai , 
+    // [] - eska matlab hamesha tujhe person hi yad rakhna hai aur kuchh na kar
+    // jo obj ko props m bhej rhe use memoizes kar liya
+    // memoizes means - just like DP 
+    const memoizedObj = useMemo(()=>person,[])
+
+    
+    console.log("Parent render")
+
+    return(
+        <>
+          <button onClick={()=>setCount(count+1)}>change count</button>
+          <button onClick={()=>setText(text+'...')}>change Text</button>
+          
+          // Component me obj pass kiya 
+          <Child count={count} person={memoizedObj}/>
+        </>
+    )
+
+  }
+
+  export default Parent;
+
+
+
+
+
+ # Child.js component
+
+     import React from 'react'
+     
+     function Child(props){
+
+        console.log("Child render")
+
+        return(
+            <>
+              { props.count}
+            </>
+        )
+
+     }
+
+    
+    // esse child re-render nhi hoga
+     export default React.memo(Child);
+
+
+```
+
+##### note :
+
+   
+![CHEESE!](imgg/memo2.png)   
+
+
+
+#### useCallback()
+
+
+```js
+
+  # App.js File Component
+
+  import Parent from './Parent';
+
+  
+  function App(){
+    return(
+        <Parent/>
+    )
+  }
+
+
+
+ 
+ # Parent.js Component
+    
+  import React,{useState} from 'react'
+  import Child from './Child';
+
+
+
+  function Parent(){
+
+    const [count,setCount] = useState(0);
+    const [text,setText] = useState('Hello');
+    
+   
+    function fn(){
+         console.log("hii")
+    }
+
+    console.log("Parent render")
+
+    return(
+        <>
+          <button onClick={()=>setCount(count+1)}>change count</button>
+          <button onClick={()=>setText(text+'...')}>change Text</button>
+
+          // Component me obj pass kiya
+          <Child count={count} fn={fn}/> 
+        </>
+    )
+
+  }
+
+  export default Parent;
+
+
+
+
+
+ # Child.js component
+
+     import React from 'react'
+     
+     function Child(props){
+
+        console.log("Child render")
+
+        return(
+            <>
+              { props.count}
+            </>
+        )
+
+     }
+
+    
+    // esse child re-render nhi hoga
+     export default React.memo(Child);
+
+
+```
+
+##### note :
+![CHEESE!](imgg/memo1.png)   
+
+
+
+```js
+
+  # App.js File Component
+
+  import Parent from './Parent';
+
+  
+  function App(){
+    return(
+        <Parent/>
+    )
+  }
+
+
+
+ 
+ # Parent.js Component
+  
+  // import kiya useCallback ko
+  import React,{useState,useCallback} from 'react'
+  import Child from './Child';
+
+
+
+  function Parent(){
+
+    const [count,setCount] = useState(0);
+    const [text,setText] = useState('Hello');
+    
+    function fn(){
+         console.log("hii")
+    }
+
+    const memoizedfn = memoCallback(()=>fn,[])
+
+    
+    console.log("Parent render")
+
+    return(
+        <>
+          <button onClick={()=>setCount(count+1)}>change count</button>
+          <button onClick={()=>setText(text+'...')}>change Text</button>
+          
+          // Component me obj pass kiya 
+          <Child count={count} person={memoizedfn}/>
+        </>
+    )
+
+  }
+
+  export default Parent;
+
+
+
+
+
+ # Child.js component
+
+     import React from 'react'
+     
+     function Child(props){
+
+        console.log("Child render")
+
+        return(
+            <>
+              { props.count}
+            </>
+        )
+
+     }
+
+    
+    // esse child re-render nhi hoga
+     export default React.memo(Child);
+
+
+```
+
+##### note :
+
+   
+![CHEESE!](imgg/memo2.png)   
