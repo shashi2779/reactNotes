@@ -348,13 +348,16 @@
             - stateFull : mtlb esme state define kar sakte h.
 
             - Dynamic UI
+            - react v-16 se pahle : jha "state" hai, wha hme class-based component use karne hote the.
             
       - functional component
       
             - StateLess - pahle , 
               but after Hooks in functional component hmm apne state ko define kar sakte h.
+              useState() se
 
             - static UI pahle, after Hooks it is also Dynamic UI
+            - react v-16 se pahle : jha state se deal nhi karna hota , "parent" se data mangana ho toh functional component use karte the.
 
 -  class component vs functional component :
 
