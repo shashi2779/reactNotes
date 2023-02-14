@@ -56,4 +56,8 @@
 
 
 ![CHEESE!](imgg/life-3.jpg)
+
+
+##### componentDidMount :
+  - side effect wale kam, jisme hme wait karna pad sakta hai , wo kam componentDidMount handle karta hai [In class component]. 
  
