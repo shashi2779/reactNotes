@@ -59,8 +59,12 @@
 ![CHEESE!](imgg/life-3.jpg)
 
 
-##### componentDidMount :
+#### componentDidMount :
   - side effect wale kam, jisme hme wait karna pad sakta hai , wo kam componentDidMount handle karta hai [In class component]. 
+  - yah ek esa method hai jo constructor , render aur sari chije chal jane k bad last me
+    chalega aur last me jitne bhi side effect wale kam matlab jin kam ko hone me time lag
+    sakta hai, jin kamo se hame data lana hota hai , jo kam hamare system/application ko
+    slow kar sakta hai , wo sare kamo ko bad me ja kar karta hai.
   
   ```js
    class Component extends React.Component{
@@ -90,14 +94,14 @@
     jisme hme async- await lagana padega.
 
   ```js
-   async componentDidMount(){ // lifecycle me ek bar chalta hai aur data la kar de deta hai.
+    async componentDidMount(){ // lifecycle me ek bar chalta hai aur data la kar de deta hai.
 
-      const res = await axios.get(`.......`)
+          const res = await axios.get(`.......`)
       
-      let mData = res.data
+          let mData = res.data
       
-      console.log(mData)
-   }
+          console.log(mData)
+    }
 
 
    
@@ -110,4 +114,93 @@
   // axios : server par request k liye
   ```  
   
+#### Hooks : (In fun comp)
+
+- they let you use state and other react features without writting a class.
+  
+  - useState()
+    
+    - functional component m "state" manage/define karne k liye hooks ka use karte hai.
+      
+           import React,{useState} from 'react' 
+
+           
+           const [count,setCount] = useState(0)
+
+           const [text,setText] = useState('')
+
+           
+            // count : jisko manipulate karna hai
+           // setCount : yha par ek function pass karte hai, jiski madad se hamko count ko manipulate karna hai.
+          // yha "count" ki `bydefault` "value = 0" set huyi hai
+          
+          // count par koi bhi value pass kar sakte hai i.e Array , object , string , number , boolean.
+          //enme se koi bhi ho useState() k default value me pas kar sakte hai.
+  
+       ![CHEESE!](imgg/life-4.jpeg)
+
+  
+  - useEffect()
+     
+     - The effect Hook, lets you perform side effect in functional components.
+     - useEffect()  => ye teeno ka kam kar k deta h functional component me
+        
+        - componentDidMount()
+        - componentDidUpdate()
+        - componentWillUnMount()
+     
+    -    Three variation of useEffect :
+          
+           - without dependency array 
+           - with dependency array
+           - dependency array k ander "value"
+          
+          ```js
+          
+          //componentDidMount , componentDidUpdate ka kam kar k deta hai.
+                
+                    
+                    useEffect(()=>{
+
+                    
+                    }) 
+
+            
+        
+          
+          //componentDidMount ka kam kar k dega
+          
+          // ek bar hi chala ,
+          
+          // esko koi bhi dependency nahi diya ,
+          // matlab ye kisi bhi value k liye dubara call nahi hoga.
+             
+             
+                    useEffect(()=>{
+
+                        
+                    },[]) 
+
+
+
+         
+         // componentDidMount ka kam kar k dega functional component m
+         // count k update hone par chalna hai.
+
+               
+                useEffect(()=>{
+
+                        
+                 },[count]) 
+
+
+
+             
+             i.e   
+                    useEffect(()=>{
+
+                                
+                     },[Count,Name])   
+
+          ```      
  
