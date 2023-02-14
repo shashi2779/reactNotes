@@ -497,4 +497,3 @@
  - props ko {} 💨 esme pass karte h.
 
 
-![CHEESE!](img/React_Revision.jpg)
