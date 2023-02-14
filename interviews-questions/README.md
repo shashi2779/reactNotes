@@ -7,7 +7,7 @@
 # react-interviews-question :
 
 ### Lifecycle method in react :
-
+------------------------------------
 - Three phases : (In class)
 
      - mounting(creation)   : 
@@ -29,7 +29,7 @@
 ![CHEESE!](imgg/life-2.png)
 
 
-##### In functional component :
+#### In functional component :
 
    - lifecycle wala kam function component me "Hook" k aane se "useEffect()" se solve karte h
    - side effect wale kam jisame hme wait karna pad sakta hai, wo kam hmm 
@@ -46,3 +46,10 @@
         - useEffect(fun , [...parameter...]) :
             
              - unn parameters k , conditionally after first render
+
+
+#### note:
+    
+    1- componentDidMount   ====alternate====>   useEffect(fun,[ ])
+
+    2- useEffect(fun) => eska alternate class component m nhi hota.
