@@ -212,6 +212,8 @@
 -------------------
 -------------------
 
+##### React.memo(Child)
+
 ```js
 
   # App.js File Component
