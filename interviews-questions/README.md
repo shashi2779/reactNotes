@@ -212,6 +212,26 @@
 -------------------
 -------------------
 
+  i.e  just like DP 
+- React.memo( ) :
+   
+   - memoized the components
+
+- useMemo( ) :
+    
+    - memoized the object 
+    - jo obj ko props me bhej rhe hai usse memoized kar liya
+
+- useCallback( ) :
+   
+   - memoized the function 
+
+- use:
+  - props => React.memo()
+  - object and function ko "new refrence" / "new address" milta hai.
+    - obj => useMemo()
+    - fun => useCallback
+
 ##### React.memo()
 
 ```js
