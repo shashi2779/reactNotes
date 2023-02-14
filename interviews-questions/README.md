@@ -60,4 +60,53 @@
 
 ##### componentDidMount :
   - side effect wale kam, jisme hme wait karna pad sakta hai , wo kam componentDidMount handle karta hai [In class component]. 
+  
+  ```js
+   class Component extends React.Component{
+      constructor(){
+
+     
+      }
+
+      componentDidMount(){
+
+     
+      }
+
+      render(){
+
+      
+      }
+
+   }
+
+
+   // pahle constructor chalega then render then componentDidMount.
+  ```
+
+  - API calls => jisme hame wait karna pad sakta hai ,
+    1 sec / 2 sec / 3 sec me data aayega.
+    jisme hme async- await lagana padega.
+
+  ```js
+   async componentDidMount(){ // lifecycle me ek bar chalta hai aur data la kar de deta hai.
+
+      const res = await axios.get(`.......`)
+      
+      let mData = res.data
+      
+      console.log(mData)
+   }
+
+
+   
+   // axios ek promised libery hai toh esko promise k term me likhana thoda complex 
+   // hota hai , toh kyun na async-await use kar liya jaye.
+
+   // jisme hame wait karna pad rha ki data 1 sec / 2 sec / 3 sec me data aayega.
+  //  toh hme async- await use kiya. componentDidMount k sath.
+
+  // axios : server par request k liye
+  ```  
+  
  
