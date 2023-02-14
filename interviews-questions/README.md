@@ -53,7 +53,8 @@
     1- componentDidMount   ====alternate====>   useEffect(fun,[ ])
 
     2- useEffect(fun) => eska alternate class component m nhi hota.
-
+    
+-----*********** -----***********---------   
 
 ![CHEESE!](imgg/life-3.jpg)
 
