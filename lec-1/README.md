@@ -4,6 +4,7 @@
     which is used to build fast & efficient UI/UX.
 
    - It is develop by FB/Meta. 
+   - DOM [O(n^3)] kam ko React [O(n)] me kar k deti h.
 
 ## why React ?
 
