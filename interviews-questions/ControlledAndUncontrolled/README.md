@@ -1,8 +1,6 @@
 ### Controlled and UnControlled component :
 ------------------------------------------------
 
-![](img/comp5.png)
-
 #### Controlled Component :
 
 
