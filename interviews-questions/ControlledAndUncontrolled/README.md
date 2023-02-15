@@ -133,7 +133,7 @@ Controlled Component
 - yha onChange ka event lga rhe 
   yha value ko update karte hai
 
-- **input par validation 
+- *yha input par validation 
 
 - *conditionally disability submit
    i.e strong password set karne k bad aap next page par ja sakte hai
