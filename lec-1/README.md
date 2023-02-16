@@ -483,6 +483,17 @@
 
             ReactDOM.render(<App/>,document.getElementById("root"))
 
+
+
+            
+            #output:
+            ===========
+                        Add a Task
+                        task to do
+                        abcd
+                        finished tasks
+                        efghij
+
         ```  
    - functional component :
      ---------------------------
