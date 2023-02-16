@@ -404,12 +404,12 @@
 
 
       class App extends React.Component{
-      render(){
-            const name = 'shashi'
-            return(
-            <h1>hello {name}</h1>
-            )
-      }
+            render(){
+                  const name = 'shashi'
+                  return(
+                    <h1>hello {name}</h1>
+                  )
+            }
       }
 
       ReactDOM.render(<App/>,document.getElementById("root"))
