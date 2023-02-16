@@ -438,7 +438,52 @@
              this.props.name
 
 
-   
+        ```js
+           # index.js
+           ----------------
+
+
+            import React from 'react'
+            import  ReactDOM  from 'react-dom'
+            import './index.css'
+
+
+            class AddTask extends React.Component{
+                render(){
+                        return(
+                            <div>Add a Task</div>
+                        )
+                }
+            }
+
+
+            class TaskList extends React.Component{
+            render(){
+                  return(
+                        <>
+                        <div>{this.props.purpose}</div>
+                        <div>{this.props.desc}</div>
+                        </>
+                  )
+            }
+            }
+
+
+            class App extends React.Component{
+                  render(){
+                      return(
+                         <>
+                          <AddTask/>
+                          <TaskList purpose='task to do'  desc='abcd'/>
+                          <TaskList purpose='finished tasks' desc='efghij'/>
+                        </>
+                        )
+                  }
+            }
+
+            ReactDOM.render(<App/>,document.getElementById("root"))
+
+        ```  
    - functional component :
      ---------------------------
         
