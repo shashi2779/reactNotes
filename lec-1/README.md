@@ -393,6 +393,34 @@
          }
 
        ```
+       
+       ```js
+       #index.js file
+       ----------------
+
+      import React from 'react'
+      import  ReactDOM  from 'react-dom'
+      import './index.css'
+
+
+      class App extends React.Component{
+      render(){
+            const name = 'shashi'
+            return(
+            <h1>hello {name}</h1>
+            )
+      }
+      }
+
+      ReactDOM.render(<App/>,document.getElementById("root"))
+
+
+      -------------------------------------
+      
+      #output:
+               hello shashi
+
+       ```
        - state define :
              
              this.state={
