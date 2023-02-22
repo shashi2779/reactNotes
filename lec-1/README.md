@@ -36,6 +36,7 @@
   - write the static HTML.
   - Identify the changing data & put it as state.
   - To manipulate that state... use eventListner or life cycle method.
+  - Establish communation between components.[parent to child or child to parent]
    ----------------------     
 -----------------------
 ----------------------
