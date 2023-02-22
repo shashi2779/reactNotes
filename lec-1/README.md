@@ -30,7 +30,12 @@
    - It manage UI by state.
 
    - react uses something called as Virtual Dom.    
-
+### 4-step to make website in react
+------------------------------------
+  - Break your App in component.
+  - write the static HTML.
+  - Identify the changing data & put it as state.
+  - To manipulate that state... use eventListner or life cycle method.
    ----------------------     
 -----------------------
 ----------------------
