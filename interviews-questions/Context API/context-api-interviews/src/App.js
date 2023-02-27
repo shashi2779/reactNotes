@@ -1,4 +1,3 @@
-import './App.css';
 // createContext import kiya 
 import { createContext } from 'react';
 import ChildA from './components/ChildA';

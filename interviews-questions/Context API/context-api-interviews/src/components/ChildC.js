@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+//import createContext in data,data1
 import {data,data1} from '../App.js'
 
 function ChildC() {
