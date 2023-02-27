@@ -1,7 +1,8 @@
+import './App.css';
 // createContext import kiya 
 import { createContext } from 'react';
-import './App.css';
 import ChildA from './components/ChildA';
+
 
 
 // In Context API
@@ -27,6 +28,7 @@ function App() {
         </data1.Provider>
       </data.Provider>
 
+     
     </>
   );
 }
