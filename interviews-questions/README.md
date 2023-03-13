@@ -653,7 +653,7 @@
           <button onClick={()=>setCount(count+1)}>change count</button>
           <button onClick={()=>setText(text+'...')}>change Text</button>
 
-          // Component me obj pass kiya
+          // Component me function pass kiya
           <Child count={count} fn={fn}/> 
         </>
     )
@@ -737,7 +737,7 @@
           <button onClick={()=>setCount(count+1)}>change count</button>
           <button onClick={()=>setText(text+'...')}>change Text</button>
           
-          // Component me obj pass kiya 
+          // Component me function pass kiya 
           <Child count={count} person={memoizedfn}/>
         </>
     )
