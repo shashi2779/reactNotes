@@ -82,6 +82,7 @@
         ele.innerHTML='hello'
 
         let root = document.getElementById('root')
+        // let root = document.querySelector('#root')
 
         root.appendChild(ele)
 
