@@ -30,7 +30,7 @@
    - It manage UI by state.
 
    - react uses something called as Virtual Dom.    
-# 4-step to make website in react
+# 5-step to make website in react
 ------------------------------------
   - Break your App in component.
   - write the static HTML.
