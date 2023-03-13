@@ -284,6 +284,7 @@
 
                         link : <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
+                  
                   3- jha hmm <script></script> likhate h uska type="text/babel"
                       kar dete h
                     
