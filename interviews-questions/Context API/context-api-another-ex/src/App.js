@@ -1,7 +1,7 @@
 import './App.css';
-import context from './components/Context'
 import { useState } from 'react';
 import Nav from './components/Nav'
+import context from './components/Context'
 
 
 // In Context API
