@@ -1,5 +1,6 @@
 ## Context API :
 - create -> provider -> consumer (useContext)
+- create (ChildA) -> provider (App.js) -> useContext (consumer -> ChildC)
 -----------
 - create : 
   - create context
