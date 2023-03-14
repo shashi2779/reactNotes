@@ -8,6 +8,10 @@
 
 # react-interviews-question :
 
+## Topic :
+- Lifecycle method
+- Memoization
+
 ### Lifecycle method in react : 
 ------------------------------------
 - sideEffect wale kam kar k deta hai class component me.  i.e API call
