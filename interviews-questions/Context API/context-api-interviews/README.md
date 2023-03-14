@@ -7,8 +7,10 @@
 ## Context API Flow 
 - create -> provider -> consumer (useContext)
 - create : 
+   - create context
    - const data1 = createContext()
 - provider :    [ App.js ]
+   - data provide in our components 
 ```js
      const data1 = createContext()
 
@@ -25,6 +27,7 @@
 
 ```
 - useContext 
+  - component me "global store" se value nikalna with useContext.
 ```js
 import React, { useContext } from 'react'
 //import createContext in data,data1
@@ -44,13 +47,6 @@ function ChildC() {
 export default ChildC
 ```
 -----
-- create : 
-  - create context  
-- provider : 
-  - data provide in our components 
-- useContext : 
-   - component me "global store" se value nikalna with useContext.
-------- 
 - sabse pahle hme  context create karna hota hai then 
 - Provider data provide karta hai then 
   - ess application me App.js "data" provide krr rha 
