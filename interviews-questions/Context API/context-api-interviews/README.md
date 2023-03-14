@@ -1,9 +1,13 @@
 ## Context API :
 - create -> provider -> consumer (useContext)
 - create ( ChildA ) -> provider ( App.js ) -> useContext ( consumer -> ChildC )
+------ 
+- parent -> App.js , 
+- child -> ChildA , ChildB , ChildC
+- parent [App.js] se child [ChildC] me data bhejna hai.
 -----------
 - create : 
-  - create context
+  - create context : child -> ChildA , ChildB , ChildC 
 - provider : 
   - data provide in our components 
 - useContext : 
