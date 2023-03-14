@@ -1,3 +1,6 @@
+### first learn 
+- contect-api-interviews , then
+- context-api-another-ex
 ## Context API :
 - parent -> App.js , 
 - child -> ChildA , ChildB , ChildC
