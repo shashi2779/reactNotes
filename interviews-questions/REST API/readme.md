@@ -12,13 +12,13 @@ fetch('https://jsonplaceholder.typicode.com/posts?_limit=10')
 
 ```
 #### GET :
-- request data from an endpoint.
+- request data from an endpoint. 
 
 #### POST :
--  send data to an endpoint
+-  send data to an endpoint. 
 
 #### DELETE :
--  remove data from an endpoint
+-  remove data from an endpoint.
 
 
 ## How to Perform a GET Request in React With Fetch API :
