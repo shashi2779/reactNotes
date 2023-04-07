@@ -1,4 +1,6 @@
-## REST API 
+## REST API  :  two of the most popular approaches
+- Axios (a promise-based HTTP client) 
+- Fetch API (a browser in-built web API).
 ### fetch() :
 - which is the path or URL to the resource you want to fetch.
 - Then it returns a Promise so you can handle success or failure using the then() and catch() methods.
