@@ -6,11 +6,11 @@ import RestApi from './component/RestApi';
 
 function App() {
   return (
-   <>
-   <GetData/>
-   {/* <RestApi/> */}
-   {/* <PostData/> */}
-   </>
+    <>
+      {/* <GetData/> */}
+      <PostData/>
+      {/* <RestApi/> */}
+    </>
   );
 }
 
