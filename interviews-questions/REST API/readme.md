@@ -50,9 +50,11 @@ fetch('https://jsonplaceholder.typicode.com/posts?_limit=10')
 
 #### put :
 -  data ko "update" karne k liye
+-  [bahot sara data ko send karna]
 
 #### patch :
 -  data ko "update" karne k liye
+-  [ek particular chij hi send karna]
 
 #### DELETE :
 -  remove data from an endpoint. 
