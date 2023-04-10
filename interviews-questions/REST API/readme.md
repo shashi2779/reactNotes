@@ -1,8 +1,11 @@
 ## REST API  :  two of the most popular approaches
 - Axios (a promise-based HTTP client) 
 - Fetch API (a browser in-built web API)
+
 ### API :
 - As you know we can not directly connect reactJS to database. so we need server side language & that language basically connect with the data base provide the data in json format & this json format data is API.
+- free online API JSONPlaceholder ==> search on google for json data(Fake REST API of JSON data for development)
+
 ```js
 [
 {
@@ -27,7 +30,6 @@
 
 ```
 
-######  free online API JSONPlaceholder ==> fetch a list of posts into our application
 ### fetch() :
 - which is the path or URL to the resource you want to fetch.
 - Then it returns a Promise so you can handle success or failure using the then() and catch() methods.
