@@ -248,3 +248,51 @@ function PostData() {
 export default PostData
 
 ```
+- another
+```js
+
+import React, { useState } from 'react'
+
+function PostData() {
+
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [phoneNumber, setPhoneNumber] = useState("")
+
+
+  function saveUser() {
+    // console.log({name,email,phoneNumber})
+    let data = { name, email, phoneNumber }
+    fetch("https://jsonplaceholder.typicode.com/posts?_limit=3", {
+      method: 'POST',
+      boyd: JSON.stringify(data),
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      }
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data)
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+
+  }
+
+
+
+  return (
+    <div>
+      <h1>Post API Example</h1>
+      <input type='text' value={name} placeholder='name' onChange={(e) => setName(e.target.value)} /><br></br>
+      <input type='text' value={email} placeholder='email' onChange={(e) => { setEmail(e.target.value) }} /><br></br>
+      <input type='text' value={phoneNumber} placeholder='phoneNumber' onChange={(e) => setPhoneNumber(e.target.value)} /><br></br>
+      <button onClick={saveUser}>save new user</button>
+    </div>
+  )
+}
+
+export default PostData
+
+```
