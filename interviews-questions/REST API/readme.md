@@ -59,6 +59,7 @@ fetch(url, {
 
 OR 
 
+fetch(url)
 fetch(`https://jsonplaceholder.typicode.com/posts?_limit=3`)
 
 ```
