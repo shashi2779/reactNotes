@@ -90,8 +90,8 @@ headers: {
 };
 
 ```
-- How to Perform a GET Request in React With Fetch API :
-- eg : 
+
+## eg : 
 - How to Perform a GET Request in React With Fetch API
 ```js
 
