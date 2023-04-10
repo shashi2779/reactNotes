@@ -41,19 +41,22 @@ fetch('https://jsonplaceholder.typicode.com/posts?_limit=10')
 
 ```
 #### GET :
-- request data from an endpoint. (data ko get karne k liye)
+- request data from an endpoint. 
+- data ko "get" karne k liye
 
 #### POST :
--  send data to an endpoint. (data ko store karne k liye)
+-  send data to an endpoint. 
+-  data ko "store" karne k liye
 
 #### put :
--  data ko update karne k liye
+-  data ko "update" karne k liye
 
 #### patch :
--  data ko update karne k liye
+-  data ko "update" karne k liye
 
 #### DELETE :
--  remove data from an endpoint. (data ko remove karne k liye)
+-  remove data from an endpoint. 
+-  data ko "remove" karne k liye
 
 
 
