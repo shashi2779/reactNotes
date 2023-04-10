@@ -79,7 +79,7 @@ function PostData() {
     let data = { name, email, phoneNumber }
     fetch("https://jsonplaceholder.typicode.com/posts?_limit=3", {
       method: 'POST',
-      boyd: JSON.stringify(data),
+      body: JSON.stringify(data),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       }

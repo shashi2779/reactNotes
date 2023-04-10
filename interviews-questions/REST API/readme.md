@@ -265,9 +265,10 @@ function PostData() {
   function saveUser() {
     // console.log({name,email,phoneNumber})
     let data = { name, email, phoneNumber }
+    // In fetch method,body,headers are present
     fetch("https://jsonplaceholder.typicode.com/posts?_limit=3", {
       method: 'POST',
-      boyd: JSON.stringify(data),
+      body: JSON.stringify(data),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       }
