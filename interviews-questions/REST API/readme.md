@@ -57,6 +57,10 @@ fetch(url, {
     method: "GET" // default, so we can ignore (esko likho ya nahi koi fark nhi padta)
 })
 
+OR 
+
+fetch(`https://jsonplaceholder.typicode.com/posts?_limit=3`)
+
 ```
 -  But for other methods such as POST and DELETE, you'll need to attach the method to the options array:
 
