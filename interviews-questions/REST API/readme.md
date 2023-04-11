@@ -156,6 +156,23 @@ et iusto sed quo iure voluptatem occaecati omnis eligendi aut ad voluptatem dolo
 
 ```
 
+#### GET Request in React With Fetch API => with async-await :
+```js
+  // GET with fetch API
+   useEffect(() => {
+      const fetchPost = async () => {
+         const response = await fetch(
+            'https://jsonplaceholder.typicode.com/posts?_limit=10'
+         );
+         const data = await response.json();
+         console.log(data);
+         setPosts(data);
+      };
+      fetchPost();
+   }, []);
+```
+
+
 ## How to Perform a POST Request in React With Fetch API :
 
 - You can use the HTTP POST method to send data to an endpoint. 
@@ -277,6 +294,35 @@ function PostData() {
 export default PostData
 
 ```
+#### POST Request in React With Fetch API => with async-await :
+```js
+  // Post with fetchAPI
+   const addPosts = async (title, body) => {
+      let response = await fetch('https://jsonplaceholder.typicode.com/posts', {
+         method: 'POST',
+         body: JSON.stringify({
+            title: title,
+            body: body,
+            userId: Math.random().toString(36).slice(2),
+         }),
+         headers: {
+            'Content-type': 'application/json; charset=UTF-8',
+         },
+      });
+      let data = await response.json();
+      setPosts((posts) => [data, ...posts]);
+      setTitle('');
+      setBody('');
+   };
+
+   const handleSubmit = (e) => {
+      e.preventDefault();
+      addPosts(title, body);
+   };
+
+```
+
+
 - another
 ```js
 
@@ -326,6 +372,7 @@ function PostData() {
 export default PostData
 
 ```
+
 
 ## How to Perform a DELETE Request in React With Fetch API :
 
@@ -409,5 +456,27 @@ function DeleteData() {
 }
 
 export default DeleteData
+
+```
+#### Delete Request in React With Fetch API => with async-await :
+```js
+   // Delete with fetchAPI
+   const deletePost = async (id) => {
+      let response = await fetch(
+         `https://jsonplaceholder.typicode.com/posts/${id}`,
+         {
+            method: 'DELETE',
+         }
+      );
+      if (response.status === 200) {
+         setPosts(
+            posts.filter((post) => {
+               return post.id !== id;
+            })
+         );
+      } else {
+         return;
+      }
+   };
 
 ```
