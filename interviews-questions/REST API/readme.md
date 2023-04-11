@@ -196,6 +196,21 @@ function PostData() {
   const [body, setBody] = useState('');
   const [posts, setPosts] = useState([]);
 
+ // GET with fetch API
+ useEffect(() => {
+  fetch(`https://jsonplaceholder.typicode.com/posts?_limit=3`)
+      .then((response) => response.json())          // change string data to json format
+      .then((data) => {
+          console.log(data);
+          setPosts(data);
+      })
+      .catch((err) => {
+          console.log(err.message);
+      });
+}, []);
+
+
+// Post with fetch API
   const addPosts = async (title, body) => {
     await fetch('https://jsonplaceholder.typicode.com/posts', {
       method: 'POST',
@@ -229,6 +244,7 @@ function PostData() {
 
   return (
     <div className="app">
+      
       <div className="add-post-container">
         <form onSubmit={handleSubmit}>
           {/*  user-Title  */}
@@ -239,10 +255,21 @@ function PostData() {
           <textarea name="" className="form-control" id="" cols="10" rows="8"
             value={body} onChange={(e) => setBody(e.target.value)}
           ></textarea>
-          <button type="submit" >Add Post</button>
+          <button type="submit">Add Post</button>
         </form>
       </div>
-      {/*  */}
+    
+      <div className="posts-container">
+        {posts.map((post) => {
+          return (
+            <div className="post-card" key={post.id}>
+              <h2 className="post-title">{post.title}</h2>
+              <p className="post-body">{post.body}</p>
+            </div>
+          );
+        })}
+      </div>
+    
     </div>
   )
 }
@@ -297,5 +324,65 @@ function PostData() {
 }
 
 export default PostData
+
+```
+
+## How to Perform a DELETE Request in React With Fetch API :
+
+```js
+import React, { useEffect, useState } from 'react'
+
+function DeleteData() {
+  const [data, setData] = useState([])
+
+  useEffect(() => {
+
+    getUsers()    
+
+  }, [])
+
+  function getUsers() {
+    fetch(`https://jsonplaceholder.typicode.com/posts?_limit=3`)
+      .then((response) => response.json())
+      .then((data1) => {
+        console.log(data1)
+        setData(data1)
+      })
+      .catch((err) => {
+        console.log(err.message);
+      })
+  }
+
+
+  function deleteUser(id) {
+    fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
+      method: 'DELETE'
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data)
+        getUsers()     // whenever delete API is done we can "call it again"
+      })             
+  }                   
+
+
+  return (
+    <>
+      <h1>Delete API Call</h1>
+      <div className="posts-container">
+        {data.map((post) => (
+
+          <div className="post-card" key={post.id}>
+            <h2 className="post-title">{post.title}</h2>
+            <p className="post-body">{post.body}</p>
+            <button onClick={() => deleteUser(post.id)}>delete</button>
+          </div>
+        ))}
+      </div>
+    </>
+  )
+}
+
+export default DeleteData
 
 ```
