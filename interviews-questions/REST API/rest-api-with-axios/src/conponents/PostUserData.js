@@ -9,7 +9,7 @@ function PostUserData() {
 
 
 
-    // GET 
+    // GET with axios API
     const client = axios.create({
         baseURL: "https://jsonplaceholder.typicode.com/posts"
     });
@@ -23,7 +23,7 @@ function PostUserData() {
 
 
 
-    // POST
+    // POST with axios API
     const addPosts = (title, body) => {
         client
             .post('', {

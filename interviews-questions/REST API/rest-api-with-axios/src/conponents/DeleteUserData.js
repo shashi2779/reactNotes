@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import axios from "axios";
 
-function GetUserData() {
+
+function DeleteUserData() {
     const [posts, setPosts] = useState([])
+
 
     // GET with axios API
     const client = axios.create({
@@ -16,6 +18,21 @@ function GetUserData() {
         });
     }, []);
 
+
+
+    // DELETE with axios API
+    const deletePost = (id) => {
+        client.delete(`${id}`);
+        setPosts(
+            posts.filter((post) => {
+                return post.id !== id;
+            })
+        );
+    };
+
+
+
+
     return (
         <>
             <div className="posts-container">
@@ -24,6 +41,11 @@ function GetUserData() {
                         <div className="post-card" key={post.id}>
                             <h2 className="post-title">{post.title}</h2>
                             <p className="post-body">{post.body}</p>
+                            <div className="button">
+                                <button className="delete-btn" onClick={() => deletePost(post.id)}>
+                                    Delete
+                                </button>
+                            </div>
                         </div>
                     );
                 })}
@@ -32,4 +54,4 @@ function GetUserData() {
     )
 }
 
-export default GetUserData
+export default DeleteUserData
