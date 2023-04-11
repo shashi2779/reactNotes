@@ -480,3 +480,23 @@ export default DeleteData
    };
 
 ```
+
+# How to Consume APIs Using Axios 
+- advance version of fetch API 
+### How to Install and Configure an Axios Instance 
+- You can add Axios to your project by running the following command:
+```js
+npm install axios
+
+```
+
+#### Once you've successfully installed Axios, we can proceed to create an instance, which is optional but recommended as it saves us from unnecessary repetition.
+#### To create an instance, we use the .create() method, which we can use to specify information such as the URL and possibly headers:
+```js
+import axios from "axios";
+
+const client = axios.create({
+   baseURL: "https://jsonplaceholder.typicode.com/posts" 
+});
+
+```
