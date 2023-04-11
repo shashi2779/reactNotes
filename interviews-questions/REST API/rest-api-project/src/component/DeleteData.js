@@ -17,7 +17,7 @@ function DeleteData() {
   }, []);
 
 
-
+// Delete with fetch API
   const deletePost = async (id) => {
     await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
       method: 'DELETE',
