@@ -557,6 +557,18 @@ function GetUserData() {
 export default GetUserData
 
 ```
+#### GET Request in React With Axios => with async-await
+```js
+// GET with Axios
+   useEffect(() => {
+      const fetchPost = async () => {
+         let response = await client.get('?_limit=10');
+         setPosts(response.data);
+      };
+      fetchPost();
+   }, []);
+
+```
 
 ## How to Perform a POST Request in React With Axios :
 ```js
@@ -657,6 +669,24 @@ function PostUserData() {
 export default PostUserData
 
 ```
+#### POST Request in React With Axios => with async-await
+```js
+   // Post with Axios
+   const addPosts = async (title, body) => {
+      let response = await client.post('', {
+         title: title,
+         body: body,
+      });
+      setPosts((posts) => [response.data, ...posts]);
+   };
+
+   const handleSubmit = (e) => {
+      e.preventDefault();
+      addPosts(title, body);
+   };
+
+```
+
 
 ## How to Perform a DELETE Request in React With Axios :
 - We can perform delete requests using the delete method, which gets the id 
@@ -733,5 +763,18 @@ function DeleteUserData() {
 }
 
 export default DeleteUserData
+
+```
+#### POST Request in React With Axios => with async-await
+```js
+  // Delete with Axios
+   const deletePost = async (id) => {
+      await client.delete(`${id}`);
+      setPosts(
+         posts.filter((post) => {
+            return post.id !== id;
+         })
+      );
+   };
 
 ```
