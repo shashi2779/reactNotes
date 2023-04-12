@@ -49,11 +49,11 @@ fetch('https://jsonplaceholder.typicode.com/posts?_limit=10')
 -  send data to an endpoint. 
 -  data ko "store" karne k liye
 
-#### put :
+#### PUT :
 -  data ko "update" karne k liye
 -  [bahot sara data ko send karna]
 
-#### patch :
+#### PATCH :
 -  data ko "update" karne k liye
 -  [ek particular chij hi send karna]
 
