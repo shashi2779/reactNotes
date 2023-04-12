@@ -179,6 +179,7 @@ et iusto sed quo iure voluptatem occaecati omnis eligendi aut ad voluptatem dolo
 - You can use the HTTP POST method to send data to an endpoint. 
 - It works similarly to the GET request, 
 - the main difference being that you need to add the method and two additional parameters to the optional object:
+- method , body , headers
 
 ```js
 const addPosts = async (title, body) => {
