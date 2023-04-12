@@ -5,6 +5,7 @@
 ### API :
 - As you know we can not directly connect reactJS to database. so we need server side language & that language basically connect with the data base provide the data in json format & this json format data is API.
 - free online API JSONPlaceholder <== search on google for json data(Fake REST API of JSON data for development)
+- API Link : https://jsonplaceholder.typicode.com/posts
 
 ```js
 [
