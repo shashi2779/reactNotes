@@ -20,7 +20,7 @@
         </>
       </context.Provider>  
      ```
-    - eg =>
+    - eg :
      ```js
         App.js
         -----------
@@ -73,7 +73,9 @@ export default App;
 #### Child.js
 - "App.js" se data hmne bheja , toh hmm uss data ko "Child" me kaise access karegen
   - jab bhi aap child component me jaoge aap ko import karna hai Hook --> uss hook ka nam hai "useContext" 
-  - "useContext" aapke component k ander hi use hoga 
+  - Import :
+     -  import React, { useContext } from 'react' 
+  - "useContext" aapke "component" k ander hi use hoga 
   - useContext --> ke through hmm "global store" se "value" mangate hai
 ```js
 import React, { useContext } from 'react'
