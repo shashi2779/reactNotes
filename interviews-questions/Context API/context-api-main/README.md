@@ -5,7 +5,7 @@
 - call kiye :
    - const context = createContext()
    - createContext() --> me default "data" bhi de sakte hai
-- jaha-2 use karna chahate ho "wrapper" bana lo
+- jaha-2 use karna chahate ho "wrapper" bana lo :
    - mai chahta hu pure k pure "app.js" me jitne "component" hai , har jagah "data" ko transfer kar paye
      ```js
       <context.Provider value={color}>
