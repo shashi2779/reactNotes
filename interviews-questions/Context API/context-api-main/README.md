@@ -97,9 +97,9 @@ export default Child
 ```
 
 ## Food_App with Context API :
-- create , provider , useContext
+#### create , provider , useContext
    - AuthProvider.js --> App.js --> Signup.js , Login.js 
-#### create , provider , useContext :
+#### Food_App with Context API :
 - components --> context --> AuthProvider
 ```js
 import React, { useState, useEffect, useContext } from 'react';
