@@ -100,7 +100,7 @@ export default Child
 #### create , provider , useContext
    - AuthProvider.js --> App.js --> Signup.js , Login.js 
 #### Food_App with Context API :
-- components --> context --> AuthProvider
+- components --> context --> "AuthProvider"
 ```js
 import React, { useState, useEffect, useContext } from 'react';
 import axios from 'axios';
@@ -255,7 +255,7 @@ function App() {
 export default App;
 
 ```
-- components --> login.js
+- components --> "login.js"
 ```js
 import React, { useEffect, useState, useContext } from 'react';
 import { AuthContext } from '../Context/AuthProvider';
@@ -324,7 +324,7 @@ function Login() {
 export default Login;
 
 ```
-- components --> signup
+- components --> "signup"
 ```js
 import React, { useState } from 'react';
 import axios from 'axios';
