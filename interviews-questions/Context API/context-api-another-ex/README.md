@@ -55,6 +55,7 @@ export default App;
 ```
 - Nav.js
 ```js
+//useContext --> ke through hmm "global store" se "value" mangate hai
 import React,{useContext} from 'react';
 import context from './Context';
 
