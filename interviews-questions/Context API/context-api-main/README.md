@@ -15,7 +15,7 @@
         </>
       </context.Provider>  
      ```
-     - eg :
+    - eg :
      ```js
         App.js
         -----------
