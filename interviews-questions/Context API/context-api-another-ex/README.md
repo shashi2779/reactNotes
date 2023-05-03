@@ -10,7 +10,7 @@
 // create , provider , useContext
 // create [ const context = createContext() ] , provider [ <context.Provider> ] , useContext [ const theme = useContext(context) ]
 // provider => data provide in our components 
-// useContext  => component me "global store" se value nikalna with useContext.
+//useContext --> ke through hmm "global store" se "value" mangate hai
 
 // createContext -> context.provider ->
 // context.js -> App.js -> 
