@@ -1,0 +1,84 @@
+### Context API 
+- import : 
+   - import React,{createContext} from 'react';
+- call kiye :
+   - const context = createContext()
+   - createContext() --> me default "data" bhi de sakte hai
+- jaha-2 use karna chahate ho "wrapper" bana lo
+   - mai chahta hu pure k pure "app.js" me jitne "component" hai , har jagah "data" ko transfer kar paye
+     ```js
+      <context.Provider value={color}>
+        <>
+          <h1>app comp</h1>
+          <Child />
+        </>
+      </context.Provider>  
+     ```
+     ```js
+            import './App.css';
+            import Child from './components/Child';
+            import React, { createContext ,useState } from 'react';
+            const context = createContext()
+
+            function App() {
+            const [color,setColor] = useState('yellow')
+            return (
+                <context.Provider value={color}>
+                <>
+                    <h1>app comp</h1>
+                    <Child />
+                </>
+                </context.Provider>
+            );
+            }
+
+            export default App;
+
+
+     ```
+
+#### App.js
+```js
+import './App.css';
+import Child from './components/Child';
+import React, { createContext ,useState } from 'react';
+// export kiye "global state" ko
+export const context = createContext()
+
+function App() {
+  const [color,setColor] = useState('yellow')
+  return (
+    <context.Provider value={color}>
+      <>
+        <h1>app comp</h1>
+        <Child />
+      </>
+    </context.Provider>
+  );
+}
+
+export default App;
+
+```
+#### Child.js
+- app.js se data bheja , toh hmm uss data ko Child me kaise access karegen
+  - jab bhi aap child component me jaoge aap ko import karna hai Hook --> uss hook ka nam hai "useContext" 
+  - "useContext" aapke component k ander hi use hoga 
+  - useContext --> ke through hmm "global store" se "value" mangate hai
+```js
+import React, { useContext } from 'react'
+import { context } from '../App'
+
+function Child() {
+    // useContext me "global state --> context" pass kiye 
+    const appColor = useContext(context)
+    return (
+        <>
+            <h1 style={{ color: appColor }}>child components</h1>
+        </>
+    )
+}
+
+export default Child
+
+```
