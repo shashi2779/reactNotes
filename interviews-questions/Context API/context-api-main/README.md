@@ -4,7 +4,8 @@
 - parent -> App.js , 
 - child -> ChildA , ChildB , ChildC
 - parent [App.js] se child [ChildC] me data bhejna hai.
-- ----
+--------
+- create , provider , useContext
 - import : 
    - import React,{createContext} from 'react';
 - call kiye :
