@@ -47,7 +47,7 @@
 import './App.css';
 import Child from './components/Child';
 import React, { createContext ,useState } from 'react';
-// export kiye "global state" ko
+// export kiye "global state" context ko
 export const context = createContext()
 
 function App() {
