@@ -33,7 +33,7 @@ import context from './components/Context'
 // how to use it = ?
 // create , provider , useContext
 // provider => data provide in our components 
-//useContext  => component me "global store" se value nikalna with useContext.
+//useContext --> ke through hmm "global store" se "value" mangate hai
 
 
 function App() {
