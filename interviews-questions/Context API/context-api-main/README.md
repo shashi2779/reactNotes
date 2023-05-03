@@ -1,5 +1,10 @@
-### Context API 
+## Context API 
 ##### [ context API jada component prr use kiye dekhna hai toh "Food_App" ka project check krr le ]
+### Context API :
+- parent -> App.js , 
+- child -> ChildA , ChildB , ChildC
+- parent [App.js] se child [ChildC] me data bhejna hai.
+- ----
 - import : 
    - import React,{createContext} from 'react';
 - call kiye :
