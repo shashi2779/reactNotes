@@ -805,6 +805,7 @@ Example.propTypes = {
   // val ka prop types "string" hona chahiye  
   val : PropTypes.string
 }
+
 ```
 - App.js
 ```js
@@ -818,9 +819,48 @@ function App(){
     </>
   )
 }
+
 ```
 ##### output :
 ```js
 warning => val : ko "boolean" de diya but chahiye tha "string"
+
+```
+
+### Default Prop Values :
+```js
+class Greeting extends React.Component {
+  render() {
+    return (
+      <h1>Hello, {this.props.name}</h1>
+    );
+  }
+}
+
+// Specifies the default values for props:
+Greeting.defaultProps = {
+  name: 'Stranger'
+};
+
+
+ReactDOM.render(<Greeting />,document.getElementById('root'))
+// Renders "Hello, Stranger":
+// const root = ReactDOM.createRoot(document.getElementById('example')); 
+// root.render(<Greeting />);
+```
+- Since ES2022 you can also declare defaultProps as static property within a React component class. 
+- For more information, see the class public static fields. This modern syntax will require a compilation step to work within older browsers.
+```js
+class Greeting extends React.Component {
+  static defaultProps = {
+    name: 'stranger'
+  }
+
+  render() {
+    return (
+      <div>Hello, {this.props.name}</div>
+    )
+  }
+}
 
 ```
