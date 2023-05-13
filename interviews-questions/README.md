@@ -11,6 +11,7 @@
 ## Topic :
 - Lifecycle method
 - Memoization
+- PropTypes
 
 ### Lifecycle method in react : 
 ------------------------------------
@@ -781,3 +782,45 @@
 
    
 ![CHEESE!](imgg/memo2.png)   
+
+## Proptypes :
+#### install => npm install prop-types
+#### import Proptypes => import PropTypes from 'prop-types'
+- Example.js
+```js
+import React from 'react'
+import PropTypes from 'prop-types'
+
+function Example({val}){
+  return (
+    <>
+    
+    </>
+  )
+}
+
+export default Example
+
+Example.propTypes = {
+  // val ka prop types "string" hona chahiye  
+  val : PropTypes.string
+}
+```
+- App.js
+```js
+import Example from './Example'
+
+function App(){
+  return(
+    <>
+    //  value bhej rha "boolean"
+    <Example val={true}/>
+    </>
+  )
+}
+```
+##### output :
+```js
+warning => val : ko "boolean" de diya but chahiye tha "string"
+
+```
