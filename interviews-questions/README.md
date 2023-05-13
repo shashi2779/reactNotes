@@ -791,7 +791,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-function Example({val}){
+function Example({val}){ // val ka prop types "string" hona chahiye  
   return (
     <>
     
