@@ -145,7 +145,9 @@ Controlled Component
 UnControlled Component 
 ------------------------
 - *yha ham ref create karate hai 
-   const inputVal = React.createRef()
+   const 
+   
+   inputVal = React.createRef()
 
 - yha koi event nhi lagate 
   yha value update ka kam nhi karte 
