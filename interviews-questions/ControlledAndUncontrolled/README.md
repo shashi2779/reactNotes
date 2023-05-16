@@ -66,7 +66,7 @@ export default Form
 #### UnControlled Component : [ track nhi rakhate ]
 ---------------------------------
 - *yha validation nahi lga sakte bcz yha par hamne koi track nhi rakha ,
-  input me koi value store nhi karayi with onClick ,
+  input me koi value store nhi karayi with onChange ,
   hamne direct refrance store kra
 
 
