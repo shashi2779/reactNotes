@@ -136,10 +136,12 @@ Controlled Component
 - yha onChange ka event lga rhe 
   taki value ko update kar sake
 
+-  *yha track rakhate hai
+
 - *conditionally disability submit
    i.e strong password set karne k bad aap next page par ja sakte hai
 
--  *yha track rakhate hai
+
 -  *onSubmit validation yha kar sakte hai 
 
 
@@ -153,10 +155,12 @@ UnControlled Component
 - *yha input ka validation nhi karte  = ✖
 
 - yha koi event nhi lagate 
-  yha value update ka kam nhi karte 
+  yha value update ka kam nhi karte
+
+- *yha track nhi rakhate   
 
 - *conditionally disability submit = ✖
-- *yha track nhi rakhate
+
 - *onSubmit validation yha bhi kar sakte hai 
 
 
