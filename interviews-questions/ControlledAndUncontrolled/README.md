@@ -6,9 +6,9 @@
 
 - state update huyi wo apne UI ko di , 
 - *kisi bhi component ko validated kar sakta hu that is called controlled component. 
-- control Component par validation lga sakta hu , ki name ka jo length hai
-  grater than 3 hoga tab hi "submit" kar sakta hu , nameLength 3 se kam ho toh
-  submit ko disable kar do
+- control Component par validation lga sakta hu ki 
+  name ka jo length hai grater than 3 hoga tab hi "submit" kar sakta hu ,
+  nameLength 3 se kam ho toh submit ko disable kar do
 
    if name.length > 3 then "submit" 
    
