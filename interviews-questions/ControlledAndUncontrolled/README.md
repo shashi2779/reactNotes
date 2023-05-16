@@ -69,7 +69,7 @@ export default Form
 - *yha validation nahi lga sakte bcz yha par hamne koi track nhi rakha ,
   (input me koi value store nhi karayi with onChange ) hamne direct refrance store kra
 
-- track nhi rakhate
+- track nhi rakhate , with state 
 
 - diadvantage :
   i.e mana input me "name" ki length grater than 3 ho toh hi submit ho ,
