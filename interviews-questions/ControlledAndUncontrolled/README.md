@@ -13,7 +13,7 @@
    if name.length < 3 then "submit disable"
 
 
-  i.e  strong password set karne k bad hi next page prr ja sakte hai.
+  i.e  "strong password" set karne k bad hi next page prr ja sakte hai.
 
 ```js
 # App.js :
