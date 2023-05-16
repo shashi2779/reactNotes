@@ -129,7 +129,7 @@ Controlled Component
 ---------------------- 
 - *yha variable me strore karate hai apni value   [ yha state create karte hai taki value store kar sake ]
    
-   const [name,setName] = useState('') 
+     const [ name , setName ] = useState('') 
 
 - *yha input par validation 
 
@@ -150,9 +150,8 @@ Controlled Component
 UnControlled Component 
 ------------------------
 - *yha ham ref create karate hai 
-   const 
    
-   inputVal = React.createRef()
+     const inputVal = React.createRef()
 
 - *yha input ka validation nhi karte  = ✖
 
