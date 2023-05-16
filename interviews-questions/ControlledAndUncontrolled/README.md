@@ -6,7 +6,7 @@
 
 - state update huyi wo apne UI ko di , 
 - *kisi bhi component ko validated kar sakta hu that is called controlled component. 
-- eska track rakhate hai
+- eska track rakhate hai , with state
 - control Component par validation lga sakta hu ki 
 
    if name.length > 3 then "submit" 
@@ -69,7 +69,7 @@ export default Form
 - *yha validation nahi lga sakte bcz yha par hamne koi track nhi rakha ,
   (input me koi value store nhi karayi with onChange ) hamne direct refrance store kra
 
-- track nhi rakhate , with state 
+- track nhi rakhate 
 
 - diadvantage :
   i.e mana input me "name" ki length grater than 3 ho toh hi submit ho ,
