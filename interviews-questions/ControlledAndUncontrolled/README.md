@@ -132,7 +132,7 @@ Controlled Component
    const [name,setName] = useState('') 
 
 - yha onChange ka event lga rhe 
-  yha value ko update karte hai
+  taki value ko update kar sake
 
 - *yha input par validation 
 
