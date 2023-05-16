@@ -127,7 +127,7 @@ export default Form1
 
 Controlled Component  
 ---------------------- 
-- *yha variable me strore karate hai apni value   [ yha state create karte hai taki value store kar sake ]
+- *yha variable me strore karate hai apni value   [ yha state create karte hai taki variable me value store kar sake ]
    
      const [ name , setName ] = useState('') 
 
