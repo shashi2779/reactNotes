@@ -128,6 +128,7 @@ export default Form1
 Controlled Component  
 ---------------------- 
 - *yha variable me strore karate hai apni value  
+   
    const [name,setName] = useState('') 
 
 - yha onChange ka event lga rhe 
