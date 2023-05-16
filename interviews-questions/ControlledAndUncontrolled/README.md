@@ -131,10 +131,10 @@ Controlled Component
    
    const [name,setName] = useState('') 
 
+- *yha input par validation 
+
 - yha onChange ka event lga rhe 
   taki value ko update kar sake
-
-- *yha input par validation 
 
 - *conditionally disability submit
    i.e strong password set karne k bad aap next page par ja sakte hai
@@ -150,10 +150,11 @@ UnControlled Component
    
    inputVal = React.createRef()
 
+- *yha input ka validation nhi karte  = ✖
+
 - yha koi event nhi lagate 
   yha value update ka kam nhi karte 
 
-- *yha input ka validation nhi karte  = ✖
 - *conditionally disability submit = ✖
 - *yha track nhi rakhate
 - *onSubmit validation yha bhi kar sakte hai 
