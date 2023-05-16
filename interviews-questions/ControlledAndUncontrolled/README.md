@@ -138,11 +138,13 @@ Controlled Component
 
 -  *yha track rakhate hai
 
+-  *onSubmit validation yha kar sakte hai 
+
 - *conditionally disability submit
    i.e strong password set karne k bad aap next page par ja sakte hai
 
 
--  *onSubmit validation yha kar sakte hai 
+
 
 
 UnControlled Component 
@@ -159,9 +161,11 @@ UnControlled Component
 
 - *yha track nhi rakhate   
 
+- *onSubmit validation yha bhi kar sakte hai 
+
 - *conditionally disability submit = ✖
 
-- *onSubmit validation yha bhi kar sakte hai 
+
 
 
 ![](img/comp5.png)
