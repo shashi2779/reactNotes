@@ -10,6 +10,10 @@
   grater than 3 hoga tab hi "submit" kar sakta hu , nameLength 3 se kam ho toh
   submit ko disable kar do
 
+   if(name.length > 3) then "submit" 
+   if(name.length < 3) then "submit disable"
+
+
   i.e  strong password set karne k bad hi next page prr ja sakte hai.
 
 ```js
