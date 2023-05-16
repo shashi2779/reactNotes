@@ -7,6 +7,9 @@
 - state update huyi wo apne UI ko di , 
 - *kisi bhi component ko validated kar sakta hu that is called controlled component. 
 - eska track rakhate hai , with state
+
+   const [ name , setName ] = useState('')
+   
 - control Component par validation lga sakta hu ki 
 
    if name.length > 3 then "submit" 
@@ -68,6 +71,8 @@ export default Form
 ---------------------------------
 - *yha validation nahi lga sakte bcz yha par hamne koi track nhi rakha ,
   (input me koi value store nhi karayi with onChange ) hamne direct refrance store kra
+
+  const inputVal = React.createRef()
 
 - track nhi rakhate 
 
