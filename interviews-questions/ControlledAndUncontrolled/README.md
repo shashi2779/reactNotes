@@ -1,7 +1,7 @@
 ### Controlled and UnControlled component :
 ------------------------------------------------
 
-#### Controlled Component :
+#### Controlled Component : [ track rakhate hai ]
 
 
 - state update huyi wo apne UI ko di , 
@@ -60,7 +60,7 @@ export default Form
      
 
 
-#### UnControlled Component :
+#### UnControlled Component : [ track nhi rakhate ]
 ---------------------------------
 - yha validation nahi lga sakte bcz yha par hamne koi track nhi rakha ,
   input me koi value store nhi karayi with onClick ,
