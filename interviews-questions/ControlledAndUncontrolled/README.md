@@ -1,7 +1,7 @@
 ### Controlled and UnControlled component :
 ------------------------------------------------
 
-#### Controlled Component : [ track rakhate hai ]
+#### Controlled Component : [ track rakhate hai ] 
 
 
 - state update huyi wo apne UI ko di , 
