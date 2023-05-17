@@ -97,7 +97,7 @@ export default Child
 ```
 
 ## Food_App with Context API :
-#### create , provider , useContext
+#### createContext , provider , useContext
    - AuthProvider.js --> App.js --> Signup.js , Login.js 
 #### Food_App with Context API :
 - components --> context --> "AuthProvider"
