@@ -5,6 +5,23 @@
 -  Unidirectional data flow
 -  Dedicated tools for easy debugging
 
+## How is React different from Angular?
+#### React :
+- Author => Facebook
+- Architecture => View layer of MVC
+- DOM => Virtual DOM
+- Data-Binding => Uni-directional
+- Rendering => Server-Side
+- Performance => Faster due to Virtual DOM
+
+#### Angular :
+- Author => Google
+- Architecture => Complete MVC
+- DOM => Real DOM
+- Data-Binding => Bi-directional
+- Rendering => Client-Side
+- Performance => Comparatively slow
+
 ## What is an event in React?
 ##### An event is an action that a user or system may trigger, such as pressing a key, a mouse click, etc
 - React events are named using camelCase, rather than lowercase in HTML. eg. onPress,onClick
@@ -25,23 +42,6 @@
 
 - Multi-line comments
 ![](https://www.simplilearn.com/ice9/free_resources_article_thumb/multi-line.JPG)
-
-## How is React different from Angular?
-#### React :
-- Author => Facebook
-- Architecture => View layer of MVC
-- DOM => Virtual DOM
-- Data-Binding => Uni-directional
-- Rendering => Server-Side
-- Performance => Faster due to Virtual DOM
-
-#### Angular :
-- Author => Google
-- Architecture => Complete MVC
-- DOM => Real DOM
-- Data-Binding => Bi-directional
-- Rendering => Client-Side
-- Performance => Comparatively slow
 
 ## What is a higher-order component in React?
 - HOC is a component which recieve a component & return a component
