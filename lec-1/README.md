@@ -29,7 +29,13 @@
 
    - It manage UI by state.
 
-   - react uses something called as Virtual Dom.    
+   - react uses something called as Virtual Dom.  
+## what are the major features of React ? 
+- JSX
+- Virtual DOM
+- Server-side rendering
+- Uni-Directional
+- Reusable components   
 # 5 step to make website in react
 ------------------------------------
   - Break your App in component.
