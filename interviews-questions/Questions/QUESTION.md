@@ -52,3 +52,28 @@
 
 ## What is the difference between state and props ?
 - In React, both state and props are plain JavaScript objects and used to manage the data of a component, but they are used in different ways and have different characteristics. state is managed by the component itself and can be updated using the setState() function. Unlike props, state can be modified by the component and is used to manage the internal state of the component. Changes in the state trigger a re-render of the component and its children. props (short for "properties") are passed to a component by its parent component and are read-only, meaning that they cannot be modified by the component itself. props can be used to configure the behavior of a component and to pass data between components.
+
+## When do you need to use refs ?
+##### There are few use cases to go for refs,
+- Managing focus, text selection, or media playback.
+- Triggering imperative animations.
+- Integrating with third-party DOM libraries.
+
+## What are keys in React ?
+##### A key is a special string attribute that needs to be included when using lists of elements.
+![](https://d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/336/original/What_are_keys_in_React.png?1640091613)
+```js
+const ids = [1,2,3,4,5];
+const listElements = ids.map((id)=>{
+return(
+<li key={id.toString()}>
+  {id}
+</li>
+)
+})
+```
+- Keys help react identify which elements were added, changed or removed.
+- Keys should be given to array elements for providing a unique identity for each element.
+- Without keys, React does not understand the order or uniqueness of each element.
+- With keys, React has an idea of which particular element was deleted, edited, and added.
+- Keys are generally used for displaying a list of data coming from an API.
