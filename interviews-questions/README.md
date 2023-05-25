@@ -223,6 +223,7 @@
 - React.memo( ) :
    
    - memoized the components
+   - functional component me re-rendering ko rokta hai 
 
 - useMemo( ) :
     
