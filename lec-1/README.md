@@ -599,4 +599,17 @@
  - pass data from one component to an other component [parent comp to child comp].
  - props ko {} 💨 esme pass karte h.
 
+### If you start to make react rpoject :
+- then use react frame work => Next.js , Remix , Gatsby
+- Next.js is maintained by Vercel. 
+- "Expo" for react-native
+- 
 
+#### Notes :
+- "Next" use karne ka matlab hi hai aap "React" use kar rhe ho with extra functionality.
+   react dead nhi hua hai
+
+   like that Ruby on Rails is still Ruby
+
+- agar aap ko still React hi use karna hai without any Framework then use like "Vite" or "Parcel"
+- use "Vite" 
