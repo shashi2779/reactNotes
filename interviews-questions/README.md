@@ -785,6 +785,8 @@
 ![CHEESE!](imgg/memo2.png)   
 
 ## Proptypes :
+- a mechanism that ensures that the passed value is of the correct datatype.
+- yah sunischit karta hai ki pass kiya gya "value" sahi datatypes hai ki nhi. 
 #### install => npm install prop-types
 #### import Proptypes => import PropTypes from 'prop-types'
 - Example.js
