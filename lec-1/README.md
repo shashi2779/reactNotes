@@ -602,7 +602,8 @@
 ### If you start to make react rpoject :
 - then use react frame work => Next.js , Remix , Gatsby
 - Next.js is maintained by Vercel. 
-- Next.js current v-13.4
+- Next.js current version v-13.4
+- React.js current version v-18.2
 - "Expo" for react-native
 
 ### Notes :
