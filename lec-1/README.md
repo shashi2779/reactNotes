@@ -603,7 +603,6 @@
 - then use react frame work => Next.js , Remix , Gatsby
 - Next.js is maintained by Vercel. 
 - "Expo" for react-native
-- 
 
 ### Notes :
 - "Next" use karne ka matlab hi hai aap "React" use kar rhe ho with extra functionality.
