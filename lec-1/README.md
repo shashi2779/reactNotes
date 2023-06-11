@@ -614,3 +614,18 @@
 
 - agar aap ko still React hi use karna hai without any Framework then use like "Vite" or "Parcel"
 - use "Vite" 
+
+
+### How to use Next.js :
+#### steps :
+- npx create-next-app@latest
+- create-next-app@13.4.4 ok to proceed ? (y) => y
+- typescript (N/Y) => N
+- ESLint => Y 
+- Tailwind CSS => Y
+- src/directory => N
+- App Router => N
+- import alias => N
+- npm run dev => our project running on localhost
+
+ 
