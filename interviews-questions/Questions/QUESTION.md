@@ -94,3 +94,19 @@ return(
 ## How to pass data b/w sibling components. using React router 
 - Passing data between sibling components of React is possible using React Router with the help of history.push and match.params.
 
+
+### difference b/w pure component vs higher order component 
+#### pure component :
+- ye class component me use hote hai
+- stateless hote hai
+- aapke component ke re-rendering ko rokta hai  [class comp me re-rendering ko rokta hai] 
+    - bda comp rahega toh re-rendering hone me time lagega
+- enko props ke through "data" bhejte hai , aur unke base par render karte hai
+
+#### higher order component :
+- state hoti hai
+- ek component jo dusare components ko as a props leta hai , 
+ 
+  aur ek alag components return karta hai.
+
+- HOC is a component which recieve a component & return a component  
