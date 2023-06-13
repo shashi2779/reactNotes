@@ -102,6 +102,7 @@ return(
 - esliye enko props ke through "data" bhejte hai , aur unke base par render karte hai
 - aapke component ke re-rendering ko rokta hai  [class comp me re-rendering ko rokta hai] 
     - bda comp rahega toh re-rendering hone me time lagega
+    - eg. count karne wala fun
 
 
 #### higher order component :
@@ -111,3 +112,4 @@ return(
   aur ek alag components return karta hai.
 
 - HOC is a component which recieve a component & return a component  
+- eg. counter wala fun 
