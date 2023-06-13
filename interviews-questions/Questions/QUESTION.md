@@ -95,7 +95,7 @@ return(
 - Passing data between sibling components of React is possible using React Router with the help of history.push and match.params.
 
 
-## difference b/w pure component vs higher order component 
+## Difference b/w pure component vs higher order component 
 #### pure component :
 - ye class component me use hote hai
 - stateless hote hai
