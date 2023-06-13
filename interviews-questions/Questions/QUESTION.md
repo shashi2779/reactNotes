@@ -99,9 +99,10 @@ return(
 #### pure component :
 - ye class component me use hote hai
 - stateless hote hai
+- esliye enko props ke through "data" bhejte hai , aur unke base par render karte hai
 - aapke component ke re-rendering ko rokta hai  [class comp me re-rendering ko rokta hai] 
     - bda comp rahega toh re-rendering hone me time lagega
-- enko props ke through "data" bhejte hai , aur unke base par render karte hai
+
 
 #### higher order component :
 - state hoti hai
