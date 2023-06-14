@@ -13,7 +13,7 @@ function DeleteUserData() {
 
 
     useEffect(() => {
-        client.get('?_limit=3').then((response) => {
+        client.get('?_limit=10').then((response) => {
             setPosts(response.data);
         });
     }, []);

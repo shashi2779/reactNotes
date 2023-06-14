@@ -94,6 +94,13 @@ return(
 ## How to pass data b/w sibling components. using React router 
 - Passing data between sibling components of React is possible using React Router with the help of history.push and match.params.
 
+### Difference b/w context API vs Redux :
+#### Redux :
+- open source library
+- create & manage global store 
+- Action & reducer are used to manipulated this store 
+#### Context API :
+- state management solution
 
 ## Difference b/w pure component vs higher order component 
 #### pure component :

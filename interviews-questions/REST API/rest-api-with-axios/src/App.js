@@ -8,8 +8,8 @@ function App() {
   return (
     <>
       {/* <GetUserData /> */}
-      {/* <PostUserData/> */}
-      <DeleteUserData/>
+      <PostUserData/>
+      {/* <DeleteUserData/> */}
     </>
   );
 }
