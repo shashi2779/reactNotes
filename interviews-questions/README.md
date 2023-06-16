@@ -157,7 +157,8 @@
         - componentDidMount()
         - componentDidUpdate()
         - componentWillUnMount()  
-              - componentWillUnMount()  solve larne ke liye functional component k useEffect me "return" de ke solve karte hai.
+                  
+                   componentWillUnMount()  solve larne ke liye functional component k useEffect me "return" de ke solve karte hai.
      
     -    Three variation of useEffect :
           
