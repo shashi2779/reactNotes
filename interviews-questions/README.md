@@ -156,7 +156,7 @@
         
         - componentDidMount()
         - componentDidUpdate()
-        - componentWillUnMount()
+        - componentWillUnMount()  <= esko solve larne ke liye useEffect me "return" de ke solve karte hai.
      
     -    Three variation of useEffect :
           
