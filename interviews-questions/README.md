@@ -211,6 +211,39 @@
                                 
                      },[Count,Name])   
 
+
+
+         <!-- ###     componentwillUnMount         -->
+
+            import React, { useEffect } from 'react';
+            const ComponentExample => () => {
+                useEffect(() => {
+                    return () => {
+                        // Anything in here is fired on component unmount.
+                    }
+                }, [])
+            }
+
+
+
+
+           eg:
+
+            import React, { useEffect } from 'react';
+            const ComponentExample => () => {
+                useEffect(() => {
+                    // Anything in here is fired on component mount.
+                    return () => {
+                        // Anything in here is fired on component unmount.
+                    }
+                }, [])
+            }
+
+
+
+            note : 
+                   componentwillUnMount k liye return de ke solve karte bhai 
+
           ```      
  
 
