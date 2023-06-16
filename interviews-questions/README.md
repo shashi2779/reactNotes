@@ -768,7 +768,7 @@
          console.log("hii")
     }
 
-    const memoizedfn = memoCallback(()=>fn,[])
+    const memoizedfn = useCallback(()=>fn,[])
 
     
     console.log("Parent render")
