@@ -629,7 +629,7 @@ function PostUserData() {
 
 
     const handleSubmit = (e) => {
-        e.preventDefault(); // default behaviour change karta hai
+        e.preventDefault(); // default behaviour change karta hai --> it means "form" load na ho 
         addPosts(title, body); // upar wale fun ko call kiya
     };
 
