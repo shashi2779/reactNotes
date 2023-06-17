@@ -1,5 +1,6 @@
 ### Custom Hooks :
 - a Custom Hook is a javaScript funtion whose name starts with "use" keyword.
+    - custom hook js fun hai , useka nam "use" keyword se start hota hai.
 - we can use other hooks in custom hooks as well.
      -  apne custom hook ke ander built in hooks ka bhi use kar sakte hai.
          -  eg. useXYZ nam se koi hook banaya hai , toh mai uske ander useState , useEffect enn sare Hooks ko bhi easily define kar sakte hai.
