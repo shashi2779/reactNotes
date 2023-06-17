@@ -15,4 +15,4 @@
     
     aap higher order components bhi use kar sakte hai. 
 
-  - custom hook just like javascript function ki tarah hote hai. eg . ham js function ko ek nahi bar-2 cakk kar sakte hai , lekin define sirf ek hi bar karna hota hai , esi tarah se hamara custom hook me apna share logic likh sakte hai. aur jis bhi component me hame uss logic ki jarurat hai , ham apne custom hook ko call kar sakte hai.
+  - custom hook just like javascript function ki tarah hote hai. eg . ham js function ko ek nahi bar-2 call kar sakte hai , lekin define sirf ek hi bar karna hota hai , esi tarah se hamara custom hook me apna share logic likh sakte hai. aur jis bhi component me hame uss logic ki jarurat hai , ham apne custom hook ko call kar sakte hai.
