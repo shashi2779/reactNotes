@@ -101,10 +101,14 @@ export default Count_2
 ```
 ##### output :
 ```js
+// count_1 :
 //   10
 // [+][-]
 
 
+
+
+// count_2 :
 //    0
 // [+][-]
 
