@@ -9,3 +9,7 @@
   - hamare pas do ya do se jada components ese ho jate hain , jisme ham similar kind of logic likhate hai & it is not good to practice write.
 
     [similar kind of code again and again]
+
+    toh yha custom use karte hai.
+    
+    aap higher order components bhi use kar sakte hai. 
