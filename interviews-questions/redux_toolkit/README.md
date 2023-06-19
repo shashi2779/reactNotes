@@ -8,7 +8,7 @@
 ### store.js
 - pahle [redux] me
 ```js
-store.js <= for only only one reducer
+store.js <= for only one reducer
 ============
 // npm i redux react-redux
 
