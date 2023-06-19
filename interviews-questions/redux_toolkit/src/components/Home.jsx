@@ -11,34 +11,34 @@ function Home() {
 
     // const counter = useSelector(state => state.custom.c)
     // c ko extract kiye 
-    const {c}= useSelector(state => state.custom)
+    const { c } = useSelector(state => state.custom)
 
-    let addBtn = () =>{
+    let addBtn = () => {
         dispatch({
-            type:"increment"
+            type: "increment"
         })
     }
 
-    let addBtn25 = () =>{
+    let addBtn25 = () => {
         dispatch({
-            type:"incrementByValue",
-            payload:25
+            type: "incrementByValue",
+            payload: 25
         })
     }
 
-    let subBtn = () =>{
+    let subBtn = () => {
         dispatch({
-            type:"decrement"
+            type: "decrement"
         })
     }
-  return (
-    <>
-     <h1>{c}</h1>
-     <button onClick={addBtn}>+</button>
-     <button onClick={addBtn25}>increment by 25</button>
-     <button onClick={subBtn}>-</button>
-    </>
-  )
+    return (
+        <>
+            <h1>{c}</h1>
+            <button onClick={addBtn}>+</button>
+            <button onClick={addBtn25}>increment by 25</button>
+            <button onClick={subBtn}>-</button>
+        </>
+    )
 }
 
 export default Home

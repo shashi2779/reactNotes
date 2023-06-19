@@ -8,6 +8,53 @@
 ### store.js
 - pahle [redux] me
 ```js
+store.js <= for only only one reducer
+============
+// npm i redux react-redux
+
+//import reducer
+import ballReducer from "./redux/ballReducer";
+import { createStore } from "redux";
+
+
+const store = createStore(ballReducer);
+
+export default store;
+       
+===============================================================================
+===============================================================================
+===============================================================================
+
+
+rootReducer.js
+==============
+
+import { combineReducers } from "redux";
+import ballReducer from "./reducers/ballReducer"
+import batReducer from "./reducers/batReducer"
+import userReducer from "./reducers/user/userReducer";
+
+const rootReducer = combineReducers({
+    Ball: ballReducer,
+    Bat: batReducer,
+    User: userReducer
+});
+export default rootReducer;
+
+
+
+store.js
+=========
+// npm i redux react-redux
+
+import { createStore ,applyMiddleware} from "redux";
+// npm i redux-thunk
+import thunk from "redux-thunk";
+import rootReducer from "./redux/rootReducer";  //esse ballReducer,batReducer dono import huaa h from rootReducer.js
+const store = createStore(rootReducer,applyMiddleware(thunk));
+
+export default store;
+
 ```
 - abb [redux toolkit] me
 ```js
