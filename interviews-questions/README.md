@@ -1,9 +1,11 @@
 ![CHEESE!](imgg/React_Revision.jpg)
 
 
-### padhane k liye website : 1- Reactjs.org    2-logRocket 
+### padhane k liye website : 
+  - Reactjs.org    
+  - logRocket 
 
-![reactjs-interview-questions](https://github.com/sudheerj/reactjs-interview-questions)
+[reactjs-interview-questions](https://github.com/sudheerj/reactjs-interview-questions)
 
 ### machine round interviews questions 
 [machine round interviews questions ](https://github.com/sadanandpai/frontend-mini-challenges)
