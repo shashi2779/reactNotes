@@ -10,6 +10,9 @@
 ### machine round interviews questions 
 [machine round interviews questions ](https://github.com/sadanandpai/frontend-mini-challenges)
 
+### Frontend interview checklist & roadmap
+[Frontend interview checklist & roadmap](https://github.com/sadanandpai/frontend-learning-kit/blob/main/public/2023_FE_roadmap.pdf)
+
 # react-interviews-question :
 
 ## Topic :
