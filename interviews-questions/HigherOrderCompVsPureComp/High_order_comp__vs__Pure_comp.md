@@ -96,6 +96,7 @@ function Counter(){
 
 
 
+
 function App(){
   return(
     <>
@@ -103,6 +104,8 @@ function App(){
     </>
   )
 }
+
+
 
 
 // as a props "Counter comp" liya 
