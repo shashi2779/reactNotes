@@ -102,6 +102,19 @@ return(
 #### Context API :
 - state management solution
 
+## why should we not update the state directly ?
+```js
+* if you try to update the state directly then it was not re-render the components
+
+this.state.message = "Hello world";
+
+
+use setState() method to update the components , when state changes , the components responds by re-rendering
+
+this.setState({message:'hello world'})
+
+```
+
 ## Difference b/w pure component vs higher order component 
 #### pure component :
 - ye class component me use hote hai
