@@ -8,10 +8,8 @@ import {BrowserRouter,Switch,Route} from 'react-router-dom'
 
 import {Link} from 'react-router-dom'
 
-
-
-
-
+```
+```js
 <BrowserRouter>
     <Nav />
 
@@ -41,7 +39,9 @@ import {Link} from 'react-router-dom'
 </div>
 
 
+```
 
+```js
 
 Switch 
 ========
