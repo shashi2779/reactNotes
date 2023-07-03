@@ -76,6 +76,34 @@ eg.    PageNotFound
 
 
 ```
+- eg.
+```js
+<>
+
+<Switch>
+
+    <Route Path={'/about'}>
+        <About></About>
+    </Route>
+
+    <Route>
+    <PageNotFound></PageNotFound>
+    </Route>
+
+</Switch>
+
+</>
+
+
+
+Output:     
+=======
+  localhost:3000/about    
+  
+  About component
+
+  
+```
 
 ###### App.js
 ```js
