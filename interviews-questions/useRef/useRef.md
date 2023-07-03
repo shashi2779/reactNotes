@@ -8,6 +8,7 @@
 - bahot bar aisa hota hai hamara state,props se directly kam nhi chalta , hme html ke ander direct modification karne hote hai i.e kabhi kisi ka color , Focus handle karna pad sakta hai toh hmm use sarte hai "useRef" in functional components.
 - state k thr. bhi kar sakte hai par har jagah state use karna possible nhi hota 
 - this is import from react
+- DOM ko handle karne ke liye functional component me "useRef" use karte hai.
 
 ```js
 
