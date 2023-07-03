@@ -114,4 +114,9 @@ function HOC(props){
   )
 }
 
+
+Note:
+     - bahot se "Counter" comp chahiye jiska style ,color alag-2 ho , 
+       ya kuch extra chije added ho. tab Higher Order Componets use karte hai.
+
 ```
