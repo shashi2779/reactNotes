@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.nav-style{
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(215, 236, 144);
+    box-shadow: 5px 10px 5px rgb(104, 135, 104);
+}
+.home-link{
+    margin-left: 12rem;
+    margin-right: 12rem;
+    /* background-color: yellow; */
+}
