@@ -172,9 +172,9 @@ npm i react-router-dom
 
 import {BrowserRouter ,Routes ,Route} from 'react-router-dom'
 
-
-
-
+import {Link} from 'react-router-dom'
+```
+```js
 <BrowserRouter>
     <Nav />
 
@@ -199,4 +199,5 @@ import {BrowserRouter ,Routes ,Route} from 'react-router-dom'
    <Link to={'/favourites'}><h3>Favourites Comp</h3></Link>
 
 </div>
+
 ```
