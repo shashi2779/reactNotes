@@ -271,6 +271,9 @@ Note :
 
 
 ## Important
+- App.js
+- Nav.js
+- ErrorComponent.js
 
 ##### App.js
 ```js
