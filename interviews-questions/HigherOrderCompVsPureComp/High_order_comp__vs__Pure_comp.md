@@ -15,7 +15,7 @@ class Foo extends React.Component{
      return(
       <>
         <h1>Foo component</h1>
-      </h1>
+      </>
      )
    }
 }
