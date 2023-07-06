@@ -235,7 +235,7 @@ Note :
       Nav.js
       ------------
         
-         => hmm log child route ko direct use nhi krr sakte , uske liye ek component ko import krna padta hai "Outlet" from react-rouer-dom.
+         => hmm log "child route (children:[]) " ko direct use nhi krr sakte , uske liye ek component ko import krna padta hai "Outlet" from react-rouer-dom.
          ye "Outlet" kha use hoga "Nav" component me , means outlet bar-2 replace hoga
          agar home prr click krr rhe toh "Home" component se replace ho jayega,
          agar about prr click krr rhe toh "About" component se replace ho jayega    
