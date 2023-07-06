@@ -241,7 +241,7 @@ Note :
          agar about prr click krr rhe toh "About" component se replace ho jayega    
          
          => "Outlet" ek dynamic component hai jo bar-2 replace hota rhega. 
-             child rout ke according(home,about,favourites)
+             child route ke according(home,about,favourites)
 
          => sabse niche use karegen
 
@@ -278,7 +278,7 @@ Note :
 - ErrorComponent.js
 ```js
 "Link" ke jagah "navlink" use karte hai jab hme nav ke kisi link prr ja ke click kare 
- toh pta chale ki kiss ko touch kee rhe (home,about,favourites)
+ toh "pta chale" ki kiss ko touch kee rhe (home,about,favourites)
 
 video watch : 28:30 mi se 
 ```
