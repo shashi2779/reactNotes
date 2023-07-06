@@ -278,7 +278,7 @@ Note :
 - ErrorComponent.js
 ```js
 "Link" ke jagah "navlink" use karte hai jab hme nav ke kisi link prr ja ke click kare 
- toh "pta chale" ki kiss ko touch kee rhe (home,about,favourites)
+ toh "pta chale" ki kiss ko touch krr rhe (home,about,favourites)
 
 video watch : 28:30 mi se 
 ```
@@ -423,3 +423,7 @@ function Favourites() {
 export default Favourites
 
 ```
+
+
+## How to pass data b/w sibling components. using React router
+- Passing data between sibling components of React is possible using React Router with the help of "history.push" and "match.params".
