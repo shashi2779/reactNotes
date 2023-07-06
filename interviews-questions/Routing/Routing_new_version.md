@@ -41,7 +41,7 @@ Note :
 
 
 jo hamne "routes" create kiye "createBrowserRouter" ke ander toh abb use "provide" karna hai apne "application" ko toh 
- "RouterProvider" use karegen <RouterProvider router={Router}/>
+"RouterProvider" use karegen <RouterProvider router={Router}/>
 
 
 App.js
