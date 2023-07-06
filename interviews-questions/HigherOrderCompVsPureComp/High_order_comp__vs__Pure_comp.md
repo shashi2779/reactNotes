@@ -28,7 +28,7 @@ class Bar extends React.PureComponent{
     return(
       <>
         <h1>Foo pure component</h1>
-      </h1>
+      </>
     )
   }
 }
@@ -52,7 +52,7 @@ class App extends React.Component{
       <>
         <User count={this.state.count} />
         <button onClick={()=> this.setState(count:this.state.count+1)}>click here</button>
-      </User>
+      </>
     )
   }
 }
@@ -65,7 +65,7 @@ class User extends React.PureComponent{
     return(
       <>
         <h1>user component,{this.props.count}</h1>
-      </h1>
+      </>
     )
   }
 }
