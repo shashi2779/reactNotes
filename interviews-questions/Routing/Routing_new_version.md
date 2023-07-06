@@ -112,7 +112,7 @@ You can provide a way better UX than this when your app throws errors by providi
                         🟫
                         🔻
 
-"ErrorComponent.js" nam se component banaye jo page found nhi hoga uske liye ye "pege" dikha de
+"ErrorComponent.js" nam se component banaye jo page found nhi hoga uske liye ye "page" dikha de
 
 
 import React from 'react'
