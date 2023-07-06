@@ -23,7 +23,9 @@ const Router = createBrowserRouter([
 
 
 Note : 
-      esko App.js ke ander "return" me render karte the , abb wha render nhi karegen , esko handle hmm createBrowserRouter se krr le rhe.
+      esko App.js ke ander "return" me render karte the , abb wha render nhi karegen , 
+      
+      esko handle hmm createBrowserRouter se krr le rhe.
        
        App.js
        ========
