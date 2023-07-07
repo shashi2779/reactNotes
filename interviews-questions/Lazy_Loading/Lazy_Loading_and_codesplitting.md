@@ -1,9 +1,14 @@
 ## Lazy loading
 - lazy loading can be helpful when your application bundle size is larger.
-- react ke ander jab aap ke application kafi heavy ho jate hai , wo load lene me kafi time leti hai toh lazy loading se usse handle kregen
+- react ke ander jab aap ke application kafi heavy ho jate hai , wo/page load lene me kafi time leti hai toh lazy loading se usse handle kregen
 - jo aapka code jaldi read ho rha usse jald load krwa degen ,jo bad me me load ho rha usse bad me load karwa degen. i.e code splitting.
 - two things :  1- suspense , 2- Lazy 
 - lazy loading import from react.
+```js
+making load time less of page was challanging , but using "lazy loading" &
+with better data handling[context api , redux] able to fix that problem.
+
+```
 ###### Home.js
 ```js
 
