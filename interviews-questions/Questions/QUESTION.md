@@ -183,7 +183,7 @@ function Home(){
 - CSS Stylesheet
 - CSS Module
 
-## Types of Hooks :
+## Types of Hooks : imp interview question
 ![](https://d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/331/original/types_of_Hooks_in_React.png?1640091273)
 
 ## How to pass data b/w sibling components. using React router 
