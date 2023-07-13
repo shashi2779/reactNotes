@@ -42,12 +42,6 @@
 ## What is the difference between state and props ?
 - 
 
-## When do you need to use refs ?
-##### There are few use cases to go for refs,
-- Managing focus, text selection, or media playback.
-- Triggering imperative animations.
-- Integrating with third-party DOM libraries.
-
 ## What are keys in React ?
 ##### A key is a special string attribute that needs to be included when using lists of elements.
 ![](https://d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/336/original/What_are_keys_in_React.png?1640091613)
