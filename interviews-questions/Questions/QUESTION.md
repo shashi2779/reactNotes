@@ -41,7 +41,33 @@
 
 ## What is the difference between state and props ?
 - 
+## Lists in react
+- Lists in react are same as the lists in JS/HTML
+- we can use lists to show multiple items in a structured manner
+- we can use lists for displaying menu,navigation bar etc.
+- To traverse a list , we can use map method of an array.
+```js
+Basic HTML/JS List
+=========================
+<ul>
+<li>item 1</li>
+<li>item 1</li>
+<li>item 1</li>
+</ul>
 
+
+
+React List
+============
+const items = [1,2,3,4,5];
+const listItems = items.map((item) =>
+          <li>{item}</li>
+           
+)
+
+return <ul>{listItems}</ul>
+
+``` 
 ## What are "keys" in React ?
 - Keys help -> react identify , which elements were added, changed or removed.
 - Keys should be given to "array elements" for providing a "unique identity" for each element.
@@ -66,7 +92,26 @@ return(
 ```
 ![](https://d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/336/original/What_are_keys_in_React.png?1640091613)
 
-
+##### why use user_id with "key" & why not prefer indexes with key in react
+- the index of item might not always be the same they might change if start removing item from the array then those indexes for each element are going to be different so they are not stable identifiers of element just a shapshot of the current position in the array so always try to use a permanent identifier such as an id property instead of the index otherwise you could run into unexpected error & performances issue.
+```js
+function Home(){
+   const [person,setPerson] = useState(["mahesh","suresh","satedra"]);
+  return(
+    <>
+      <div>
+       {
+        people.map((person,index)=>{
+             return <div key={index}>
+                    {person.name}
+             </div>
+        })
+       }
+      </div>
+    </>
+  )
+}
+```
 
 ## Rules of Hooks :
 - not allowed to call nested function , loop , conditions
