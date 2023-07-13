@@ -22,7 +22,7 @@
  <Button onPress={lightItUp} />
 ```
 
-- How do you create an event in React?
+###### How do you create an event in React?
 ![](https://www.simplilearn.com/ice9/free_resources_article_thumb/question-9.JPG)
 
 ##  Explain how lists work in React
