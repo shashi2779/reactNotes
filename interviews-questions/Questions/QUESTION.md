@@ -43,7 +43,11 @@
 - 
 
 ## What are keys in React ?
-##### A key is a special string attribute that needs to be included when using lists of elements.
+- Keys help react identify which elements were added, changed or removed.
+- Keys should be given to array elements for providing a unique identity for each element.
+- Without keys, React does not understand the order or uniqueness of each element.
+- With keys, React has an idea of which particular element was deleted, edited, and added.
+- Keys are generally used for displaying a list of data coming from an API.
 ![](https://d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/336/original/What_are_keys_in_React.png?1640091613)
 ```js
 const ids = [1,2,3,4,5];
@@ -55,11 +59,7 @@ return(
 )
 })
 ```
-- Keys help react identify which elements were added, changed or removed.
-- Keys should be given to array elements for providing a unique identity for each element.
-- Without keys, React does not understand the order or uniqueness of each element.
-- With keys, React has an idea of which particular element was deleted, edited, and added.
-- Keys are generally used for displaying a list of data coming from an API.
+
 
 ## Rules of Hooks :
 - not allowed to call nested function , loop , conditions
