@@ -17,7 +17,7 @@
 
 ## What is an event in React?
 ##### An event is an "action" that a user or system may "trigger", such as "pressing a key", a "mouse click", etc
-- React events are named using camelCase, rather than lowercase in HTML. eg. onPress,onClick
+- React events are named using "camelCase", rather than lowercase in HTML. eg. onPress,onClick
 ```js
  <Button onPress={lightItUp} />
 ```
