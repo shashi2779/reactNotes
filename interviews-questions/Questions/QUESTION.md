@@ -186,9 +186,25 @@ function Home(){
 ## Types of Hooks : imp interview question
 ![](https://d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/331/original/types_of_Hooks_in_React.png?1640091273)
 
+## difference between function and methods 
+- fun are clock of code 
+- method usi ko execute krr deta hai sort term me 
+
+## protect route in react when admit is present then login otherwise not login
+-
+## how to write test case in react / testing
+-
+
 ## How to pass data b/w sibling components. using React router 
 - Passing data between sibling components of React is possible using React Router with the help of history.push and match.params.
 
+## how to pass data child to parent in react
+
+## technology ranking then ask question
+- 
+## How to handle an error in react
+-
+##
 ### Difference b/w context API vs Redux :
 #### Redux :
 - open source library
