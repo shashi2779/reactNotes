@@ -49,7 +49,8 @@
 - With keys, React has an idea of -> which particular element was deleted, edited, and added.
 - Keys are generally used for "displaying a list of data" coming from an API.
 ```js
-key identify karta hai aur react ko batata hai list me kya chij new add huyi hai... ya kya remove hua hai.... ya kya chij hme change karna hai...
+key identify karta hai aur react ko batata hai list me kya chij new add huyi hai... ya kya remove hua hai.... 
+ya kya chij hme change karna hai...
 
 
 const ids = [1,2,3,4,5];
