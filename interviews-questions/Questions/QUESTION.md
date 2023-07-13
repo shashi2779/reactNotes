@@ -26,9 +26,7 @@
 ![](https://www.simplilearn.com/ice9/free_resources_article_thumb/question-9.JPG)
 
 ##  Explain how lists work in React
-- We create lists in React as we do in regular JavaScript. Lists display data in an ordered format
-- The traversal of lists is done using the map() function
-![](https://www.simplilearn.com/ice9/free_resources_article_thumb/const.JPG)
+-
 
 
 ## How do you write comments in React?
