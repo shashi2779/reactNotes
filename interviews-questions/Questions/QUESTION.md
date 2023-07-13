@@ -36,10 +36,6 @@
 ###### Multi-line comments
 ![](https://www.simplilearn.com/ice9/free_resources_article_thumb/multi-line.JPG)
 
-## What is a higher-order component in React?
-- HOC is a component which recieve a component & return a component
-- ek component jo desare components ko as a props leta hai aur ek alag components return karta hai.
-
 ## What is React Router?
 - React Router is a routing library built on top of React, which is used to create routes in a React application. This is one of the most frequently asked react interview questions.
 
