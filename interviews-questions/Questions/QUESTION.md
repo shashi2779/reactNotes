@@ -42,11 +42,11 @@
 ## What is the difference between state and props ?
 - 
 
-## What are keys in React ?
+## What are "keys" in React ?
 - Keys help -> react identify , which elements were added, changed or removed.
 - Keys should be given to "array elements" for providing a "unique identity" for each element.
-- Without keys, React does not understand the "order" or "uniqueness" of each element.
-- With keys, React has an idea of -> which particular element was deleted, edited, and added.
+- Without keys : React does not understand the "order" or "uniqueness" of each element.
+- With keys : React has an idea of -> which particular element was deleted, edited, and added.
 - Keys are generally used for "displaying a list of data" coming from an API.
 ```js
 key identify karta hai aur react ko batata hai list me kya chij new add huyi hai... ya kya remove hua hai.... 
