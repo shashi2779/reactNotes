@@ -93,10 +93,27 @@ return(
 ![](https://d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/336/original/What_are_keys_in_React.png?1640091613)
 
 #### why use user_id with "key" & why not prefer indexes with key in react
-- the index of item might not always be the same they might change if start removing item from the array then those indexes for each element are going to be different so they are not stable identifiers of element just a shapshot of the current position in the array so always try to use a permanent identifier such as an id property instead of the index otherwise you could run into unexpected error & performances issue.
+- the index of item might not always be the same they might change if start removing item from the array then those indexes for each element are going to be different so they are not stable identifiers of element just a shapshot of the current position in the array so always try to use a "permanent identifier" such as an i"d property" instead of the index otherwise you could run into "unexpected error" & "performances issue".
+- आइटम का सूचकांक हमेशा एक जैसा नहीं हो सकता है, यदि वे सरणी से आइटम को हटाना शुरू करते हैं तो वे बदल सकते हैं, फिर प्रत्येक तत्व के लिए वे सूचकांक अलग-अलग होंगे, इसलिए वे तत्व के स्थिर पहचानकर्ता नहीं हैं, बस सरणी में वर्तमान स्थिति का एक शापशॉट हैं। इंडेक्स के बजाय हमेशा "स्थायी पहचानकर्ता" जैसे कि i"d प्रॉपर्टी" का उपयोग करने का प्रयास करें अन्यथा आपको "अप्रत्याशित त्रुटि" और "प्रदर्शन समस्या" का सामना करना पड़ सकता है।
 ```js
+
 function Home(){
-   const [person,setPerson] = useState(["mahesh","suresh","satedra"]);
+
+  let person = [
+    {
+      id :1,
+      "name":"mahesh"
+    },
+    {
+       id :2,
+      "name":"suresh"
+    },
+    {
+      id :3,
+      "name":"dharmesh"
+    }
+  ]
+   
   return(
     <>
       <div>
@@ -111,6 +128,49 @@ function Home(){
     </>
   )
 }
+
+
+                     
+                     🟫🟫
+                     🟫🟫 
+                     🔻🔻
+
+
+
+
+
+function Home(){
+
+  let person = [
+    {
+      id :1,
+      "name":"mahesh"
+    },
+    {
+       id :2,
+      "name":"suresh"
+    },
+    {
+      id :3,
+      "name":"dharmesh"
+    }
+  ]
+ 
+  return(
+    <>
+      <div>
+       {
+        people.map((person,id)=>{
+             return <div key={person.id}>
+                    {person.name}
+             </div>
+        })
+       }
+      </div>
+    </>
+  )
+}
+
 ```
 
 ## Rules of Hooks :
