@@ -37,10 +37,10 @@
 ![](https://www.simplilearn.com/ice9/free_resources_article_thumb/multi-line.JPG)
 
 ## What is React Router?
-- React Router is a routing library built on top of React, which is used to create routes in a React application. This is one of the most frequently asked react interview questions.
+- 
 
 ## What is the difference between state and props ?
-- In React, both state and props are plain JavaScript objects and used to manage the data of a component, but they are used in different ways and have different characteristics. state is managed by the component itself and can be updated using the setState() function. Unlike props, state can be modified by the component and is used to manage the internal state of the component. Changes in the state trigger a re-render of the component and its children. props (short for "properties") are passed to a component by its parent component and are read-only, meaning that they cannot be modified by the component itself. props can be used to configure the behavior of a component and to pass data between components.
+- 
 
 ## When do you need to use refs ?
 ##### There are few use cases to go for refs,
