@@ -30,10 +30,10 @@
 
 
 ## How do you write comments in React?
-- Single-line comments
+###### Single-line comments
 ![](https://www.simplilearn.com/ice9/free_resources_article_thumb/return.JPG)
 
-- Multi-line comments
+###### Multi-line comments
 ![](https://www.simplilearn.com/ice9/free_resources_article_thumb/multi-line.JPG)
 
 ## What is a higher-order component in React?
