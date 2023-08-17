@@ -13,7 +13,7 @@
      ![CHEESE!](img/aa.png)
 
 
-      ![CHEESE!](img/bb.png)
+      ![CHEESE!](../interviews-questions/img/bb.png)
 
   - easy event handling
         
