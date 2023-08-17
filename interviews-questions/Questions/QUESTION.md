@@ -225,3 +225,28 @@ use setState() method to update the components , when state changes , the compon
 this.setState({message:'hello world'})
 
 ```
+
+### how to add images in react
+```js
+
+import Logo from "../logo.png";
+
+
+return(
+  <>
+    <img  src={Logo}></img> 
+
+    or
+
+    <img  src={Logo}/>
+  </>
+)
+
+```
+
+### images in tailwind css , jo koi copy na kar paye
+```js
+      <div className={`bg-[url(https://image.tmdb.org/t/p/original/${movies.backdrop_path})] h-[28vh] md:h-[70vh] bg-center bg-cover flex items-end justify-center`}></div>
+
+```
+##
