@@ -9,9 +9,8 @@
 ## why React ?
 
   - very Fast.
-      - 
 
-![CHEESE!](img/aa.png)
+     ![CHEESE!](img/aa.png)
 
 
       ![CHEESE!](img/bb.png)
